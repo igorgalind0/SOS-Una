@@ -10,34 +10,50 @@ button.addEventListener('click', () => {
 const slides = document.querySelectorAll('.img-intro img');
 const radioButtons = document.querySelectorAll('.radio-selector input[type="radio"]');
 let currentIndex = 0;
+let slideInterval;
+let lastIndex = 0;
 
-function showSlide(index) {
+function showSlide(index, direction) {
     slides.forEach((slide, i) => {
         slide.classList.remove('active', 'exit', 'enter'); 
         if (i === index) {
             slide.classList.add('active');
         } else if (i === (index - 1 + slides.length) % slides.length) {
-            slide.classList.add('exit');
+            slide.classList.add(direction === 'next' ? 'exit' : 'enter');
         } else if (i === (index + 1) % slides.length) {
-            slide.classList.add('enter');
+            slide.classList.add(direction === 'next' ? 'enter' : 'exit');
         }
     });
     radioButtons[index].checked = true;
 }
 
 function nextSlide() {
+    lastIndex = currentIndex;
     currentIndex = (currentIndex + 1) % slides.length;
-    showSlide(currentIndex);
+    showSlide(currentIndex, 'next');
 }
+
+function previousSlide() {
+    lastIndex = currentIndex;
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    showSlide(currentIndex, 'prev');
+}
+
+function startSlideShow() {
+    clearInterval(slideInterval);
+    slideInterval = setInterval(nextSlide, 5000);
+}
+
+startSlideShow();
 
 radioButtons.forEach((radio, index) => {
     radio.addEventListener('change', () => {
+        lastIndex = currentIndex;
         currentIndex = index;
-        showSlide(currentIndex);
+        showSlide(currentIndex, index > lastIndex ? 'next' : 'prev');
+        startSlideShow();
     });
 });
-
-setInterval(nextSlide, 5000);
 
 //Abrir modal
 const openModalButton = document.querySelector('.openModal');

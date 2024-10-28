@@ -20,7 +20,7 @@
 .parceiros li {
     padding: 32px;
     display: flex;
-    border-left: 2px solid #f1f1f1;
+    border-left: 3px solid #f1f1f1;
 }
 
 .parceiros img {
@@ -33,5 +33,5 @@
 }
 
 .parceiros li:nth-child(n + 5) {
-    border-top: 2px solid #f1f1f1;
+    border-top: 3px solid #f1f1f1;
 }

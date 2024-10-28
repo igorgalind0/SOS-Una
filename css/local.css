@@ -1,0 +1,19 @@
+.local {
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+}
+
+.local-title {
+    font-size: 3rem;
+}
+
+.local-text {
+    font-size: 1.5rem;
+}
+
+.local-mapa {
+    border-radius: 30px;
+}
