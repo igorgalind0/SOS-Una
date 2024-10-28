@@ -39,3 +39,7 @@
 .dark-mode h2 {
     color: #fff;
 }
+
+.dark-mode .parceiros img {
+    filter: brightness(0) invert(1);
+}
