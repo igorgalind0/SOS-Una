@@ -76,3 +76,7 @@
 .footer-paginas li a:hover {
     color: #ffb703;
 }
+
+.dark-mode .footer-bg {
+    background: #121212;
+}
