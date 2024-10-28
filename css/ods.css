@@ -1,0 +1,15 @@
+.ods-itens {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+
+.ods {
+    transition: .2s;
+}
+
+.ods:hover {
+    scale: 1.04;
+}
