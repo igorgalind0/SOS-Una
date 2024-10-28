@@ -18,7 +18,7 @@
     text-align: center;
     justify-content: center;
     gap: 40px;
-    color: #1e1e1e;
+    color: #1e1e1e !important;
     font-weight: 500;
 }
 
@@ -30,6 +30,29 @@
     font-size: 1.5rem;
 }
 
+.ajuda li h1{
+    position: relative;
+    display: inline-block;
+    color: #023047;
+}
+
+.ajuda li p {
+    color: #023047;
+}
+
+.ajuda li h1::before{
+    content: '';
+    width: 40px;
+    height: 5px;
+    background: #FB8500;
+    position: absolute;
+}
+
 .ajuda .button {
     padding: 30px 100px;
+}
+
+.dark-mode .ajuda li h1,
+.dark-mode .ajuda li p {
+    color: #023047;
 }

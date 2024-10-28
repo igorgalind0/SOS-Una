@@ -1,10 +1,18 @@
 //Ativar botão Dark/Light Mode
-const button = document.querySelector('.button-mode');
+document.addEventListener('DOMContentLoaded', () => {
+    const button = document.querySelector('.button-mode');
+    
+    button.addEventListener('click', () => {
+        button.classList.toggle('active');
+        document.body.classList.toggle('dark-mode');
 
-button.addEventListener('click', () => {
-    button.classList.toggle('active');
+        if (document.body.classList.contains('dark-mode')) {
+            localStorage.setItem('dark-mode', 'enabled');
+        } else {
+            localStorage.setItem('dark-mode', 'disabled');
+        }
+    });
 });
-
 
 //Rolagem do slide
 const slides = document.querySelectorAll('.img-intro img');
@@ -61,11 +69,10 @@ const closeModalButton = document.querySelector('.closeModal');
 const projectDialog = document.getElementById('projectDialog');
 
 openModalButton.addEventListener('click', () => {
+    
     projectDialog.showModal();
 });
 
 closeModalButton.addEventListener('click', () => {
     projectDialog.close();
 });
-
-

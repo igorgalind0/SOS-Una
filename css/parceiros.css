@@ -35,3 +35,7 @@
 .parceiros li:nth-child(n + 5) {
     border-top: 3px solid #f1f1f1;
 }
+
+.dark-mode h2 {
+    color: #fff;
+}

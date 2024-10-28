@@ -93,7 +93,7 @@
 .intro-title {
     font-size: 3rem;
     line-height: 1;
-    color: #023047;
+    color: var(--cor-2-b);
 }
 
 .intro-text {
@@ -112,7 +112,7 @@ dialog {
 dialog form {
     display: flex;
     flex-direction: column;
-    color: #023047;
+    color: var(--cor-2-b);
 }
 
 dialog h2 {
@@ -131,7 +131,7 @@ dialog form input,
 dialog form select,
 dialog form textarea {
     resize: none;
-    border: 1px solid #d67200;
+    border: 1px solid var(--cor-1-b);;
     border-radius: 8px;
     background-color: #f1f1f1;
     padding: 12px;
@@ -143,12 +143,12 @@ dialog form textarea {
 dialog form input:focus,
 dialog form select:focus,
 dialog form textarea:focus {
-    border-color: #023047;
+    border-color: var(--cor-2-b);;
     outline: none;
 }
 
 button {
-    background-color: #FB8500;
+    background-color: var(--cor-1-b);
     font-weight: bold;
     color: white;
     padding: 15px 40px;
@@ -160,20 +160,28 @@ button {
 }
 
 button:hover {
-    background-color: #d67200;
+    background-color: var(--cor-2-b2);;
     transform: scale(1.05);
 }
 
 button[type="button"] {
-    background-color: #023047;
+    background-color: var(--cor-2-b);;
 }
 
 button[type="button"]:hover {
-    background-color: #011f2e;
+    background-color: var(--cor-2-b2);;
     transform: scale(1.05);
 }
 
 .buttons {
     display: flex;
     justify-content: space-between;
+}
+
+.dark-mode dialog {
+    background: #1e1e1e;
+}
+
+.dark-mode dialog form {
+    color: white;
 }

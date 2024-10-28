@@ -8,6 +8,7 @@
 
 .local-title {
     font-size: 3rem;
+    color: #023047;
 }
 
 .local-text {
@@ -16,4 +17,8 @@
 
 .local-mapa {
     border-radius: 30px;
+}
+
+.dark-mode .local-title {
+    color: #fff;
 }

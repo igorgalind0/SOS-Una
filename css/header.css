@@ -99,6 +99,19 @@
     position: absolute;
 }
 
+/* DARK MODE */
+body.dark-mode a {
+    color: #fff;
+}
 
+body.dark-mode a:hover {
+    color: #FB8500;
+}
 
+.img-logo {
+    color: #023047;
+}
 
+.dark-mode .img-logo {
+    color: white;
+}
