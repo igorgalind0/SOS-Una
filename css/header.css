@@ -1,0 +1,104 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.header-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.header-menu a{
+    color: #023047;
+    font-size: 1.125rem;
+    font-weight: bold;
+    transition: .2s;
+}
+
+.header-menu a:hover {
+    color: #FB8500;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.button-mode {
+    position: relative;
+    width: 60px;
+    height: 30px;
+    background-color: #FB8500;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.button-mode:hover {
+    background-color: #d67200;
+}
+
+.toggle-ball {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    width: 22px;
+    height: 22px;
+    background-color: #fff;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transition: left 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-mode.active {
+    background-color: #023047;
+    transition: .2s;
+}
+
+.button-mode.active:hover {
+    background: #011f2e;
+}
+
+
+.button-mode.active .toggle-ball {
+    left: calc(100% - 5px - 22px);
+}
+
+.icon-sun,
+.icon-moon {
+    width: 14px;
+    height: 14px;
+    position: absolute;
+}
+
+.button-mode.active .icon-sun {
+    display: none;
+}
+
+.button-mode.active .icon-moon {
+    display: block;
+}
+
+.button-mode .icon-sun {
+    display: block;
+    position: absolute;
+}
+
+.button-mode .icon-moon {
+    display: none;
+    position: absolute;
+}
+
+
+
+

@@ -1,0 +1,179 @@
+.introducao {
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.intro-conteudo {
+    flex: 1;
+    text-align: left;
+}
+
+.slide {
+    flex: 1;
+    position: relative;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.img-intro {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.img-intro img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    opacity: 0;
+    transition: all 0.5s ease;
+    border-radius: 8px;
+}
+
+.img-intro img.active {
+    left: 0;
+    opacity: 1;
+    z-index: 1;
+}
+
+.img-intro img.exit {
+    left: -100%;
+    opacity: 0;
+    z-index: 0;
+}
+
+.radio-selector {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.radio-selector input[type="radio"] {
+    display: none;
+}
+
+.radio-selector label {
+    width: 10px;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.radio-selector input[type="radio"]:checked + label {
+    background-color: #333;
+}
+
+.img-intro img {
+    position: absolute;
+    top: 0;
+    transition: transform 0.5s ease;
+}
+
+.img-intro img.active {
+    transform: translateX(0);
+}
+
+.img-intro img.exit {
+    transform: translateX(-100%);
+}
+
+.img-intro img.enter {
+    transform: translateX(100%);
+}
+
+.intro-title {
+    font-size: 3rem;
+    line-height: 1;
+    color: #023047;
+}
+
+.intro-text {
+    font-size: 1.5rem;
+}
+
+dialog {
+    border: none;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    width: 600px;
+    max-width: 90%;
+}
+
+dialog form {
+    display: flex;
+    flex-direction: column;
+    color: #023047;
+}
+
+dialog h2 {
+    display: flex;
+    font-size: 2rem;
+    justify-content: center;
+}
+
+dialog form label {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+dialog form input,
+dialog form select,
+dialog form textarea {
+    resize: none;
+    border: 1px solid #d67200;
+    border-radius: 8px;
+    background-color: #f1f1f1;
+    padding: 12px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    transition: border-color 0.3s;
+}
+
+dialog form input:focus,
+dialog form select:focus,
+dialog form textarea:focus {
+    border-color: #023047;
+    outline: none;
+}
+
+button {
+    background-color: #FB8500;
+    font-weight: bold;
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #d67200;
+    transform: scale(1.05);
+}
+
+button[type="button"] {
+    background-color: #023047;
+}
+
+button[type="button"]:hover {
+    background-color: #011f2e;
+    transform: scale(1.05);
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./logo.svg" type="image/x-icon">
+    <title>Home - Rio Una</title>
+</head>
+<body>
+    
+    <header class="header container">
+        <div>
+            <img class="img-logo" src="./logo.svg" alt="">
+        </div>
+        <div class="menu">
+            <nav aria-label="primária">
+                <ul class="header-menu">
+                    <li><a href="#">Sobre nós</a></li>
+                    <li><a href="#">Voluntários</a></li>
+                    <li><a href="#">Doações</a></li>
+                    <li><a href="#">Objetivos</a></li>
+                </ul>
+            </nav>
+            <button class="button-mode">
+                <span class="toggle-ball">
+                    <img src="img/dia.svg" class="icon-sun" alt="Ícone do Sol">
+                    <img src="img/noite.svg" class="icon-moon" alt="Ícone da Lua">
+                </span>
+            </button>
+        </div>
+    </header>
+
+    <main class="introducao container">
+        <div class="intro-conteudo">
+            <h1 class="intro-title">
+                Junte-se a nós na luta pela despoluição do Rio Una<span class="laranja">!</span>
+            </h1>
+            <p class="intro-text">
+                O Rio Una é essencial para nossa biodiversidade e nossa comunidade. Com sua saúde ameaçada pela poluição, <span class="negrito azul">precisamos agir juntos para preservá-lo. Participe desta causa e faça a diferença!</span>
+            </p>
+
+            <a class="button openModal" href="#">Participe do projeto!</a>
+
+            <dialog id="projectDialog">
+                <form method="dialog">
+                    <h2>Participe do Projeto</h2>
+                    
+                    <label for="firstName">Nome:</label>
+                    <input type="text" id="firstName" name="firstName" required>
+            
+                    <label for="lastName">Sobrenome:</label>
+                    <input type="text" id="lastName" name="lastName" required>
+            
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+            
+                    <label for="contributionArea">Qual área quer contribuir:</label>
+                    <select id="contributionArea" name="contributionArea" required>
+                        <option value="" disabled selected>Selecione uma área</option>
+                        <option value="design">Saúde</option>
+                        <option value="desenvolvimento">Limpeza</option>
+                        <option value="marketing">Reciclagem</option>
+                        <option value="gestao">Habitação</option>
+                        <option value="outros">Outros</option>
+                    </select>
+            
+                    <label for="city">Cidade:</label>
+                    <input type="text" id="city" name="city" required>
+            
+                    <label for="phone">Número de Telefone:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="(xx) xxxxx-xxxx">
+            
+                    <label for="comments">Comentários:</label>
+                    <textarea id="comments" name="comments" rows="4" placeholder="Deixe seus comentários aqui..."></textarea>
+                    
+                    <div class="buttons">
+                        <button type="submit">Enviar</button>
+                        <button type="button" class="closeModal">Fechar</button>
+                    </div>
+                </form>
+            </dialog>
+
+        </div>
+        <div class="slide">
+            <div class="img-intro">
+                <img src="./img/RioUna.JPG" alt="Rio Una" class="slide active">
+                <img src="./img/Una.JPG" alt="Rio Una" class="slide enter">
+            </div>
+            <div class="radio-selector">
+                <input type="radio" id="slide1" name="slide" value="0" checked>
+                <label for="slide1"></label>
+                <input type="radio" id="slide2" name="slide" value="1">
+                <label for="slide2"></label>
+            </div>
+        </div>
+    </main>
+    
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
