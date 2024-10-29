@@ -185,3 +185,8 @@ button[type="button"]:hover {
 .dark-mode dialog form {
     color: white;
 }
+
+.dark-mode .intro-title,
+.dark-mode .intro-text {
+    color: #FFF;
+}

@@ -1,0 +1,47 @@
+.newsletter {
+    margin-top: 100px;
+}
+.newsletter-title {
+    font-size: 3rem;
+    color: #023047;
+    text-align: center;
+}
+
+.newsletter-text {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0px 0px 20px 0px;
+}
+
+.newsletter form div {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.newsletter-label {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #023047;
+    margin-top: 20px;
+}
+
+.newsletter input {
+    width: 100%;
+    max-width: 700px;
+    padding: 30px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background: #f1f1f1;
+}
+
+.newsletter button {
+    margin: 0;
+}
+
+.dark-mode .newsletter-label {
+    color: white;
+}
