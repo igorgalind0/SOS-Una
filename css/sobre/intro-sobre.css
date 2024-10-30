@@ -1,0 +1,17 @@
+.intro-sobre {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+
+    align-items: center;
+}
+
+.intro-sobre h1 {
+    font-size: 3rem;
+    color: #023047;
+    line-height: 1;
+}
+
+.intro-sobre p {
+    font-size: 1.5rem;
+}

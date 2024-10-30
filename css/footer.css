@@ -24,6 +24,7 @@
 
 .social-lista li a {
     color: #ffffff;
+    transition: color .3s;
 }
 
 .social-lista li a:hover {
