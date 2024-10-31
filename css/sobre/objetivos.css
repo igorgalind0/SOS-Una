@@ -1,0 +1,50 @@
+.objetivos {
+    margin-top: 50px;
+}
+
+.objetivos-title  {
+    font-size: 3rem;
+    color: #023047;
+}
+
+.objetivos p {
+    font-size: 1.5rem;
+    text-align: center;
+    width: 30ch;
+}
+
+.objetivos ul {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.objetivos ul li {
+    cursor: pointer;
+    background: #f1f1f1;
+    padding: 50px;
+    border-radius: 8px;
+
+    transition: .2s;
+}
+
+.objetivos ul li:hover {
+    scale: 1.01;
+}
+
+.obj-title {
+    font-size: 2rem;
+    color: #023047;
+    text-align: center;
+    position: relative;
+}
+
+.dark-mode .obj-title {
+    color: #023047;
+}
+
+.dark-mode .objetivos p {
+    color: #1e1e1e;
+}

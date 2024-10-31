@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./img/flat-icon.svg" type="image/x-icon">
-    <title>Home - Rio Una</title>
+    <title>Sobre nós</title>
 </head>
 <body>
     
@@ -23,12 +23,22 @@
         <div class="menu">
             <nav aria-label="primária">
                 <ul class="header-menu">
-                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#">Sobre nós</a></li>
                     <li><a href="#">Voluntários</a></li>
                     <li><a href="#">Doações</a></li>
                     <li><a href="#">Objetivos</a></li>
                 </ul>
             </nav>
+
+            <div class="pesquisa">
+                <label for="pesquisaInput">
+                    <span class="lupa">
+                        <img src="./img/search.svg" alt="">
+                    </span>
+                </label>
+                <input type="text" id="pesquisaInput" placeholder="Pesquisar">
+            </div>
+
             <button class="button-mode">
                 <span class="toggle-ball">
                     <img src="img/dia.svg" class="icon-sun" alt="Ícone do Sol">
@@ -42,13 +52,29 @@
         <div>
             <h1 class="intro-sobre-title">Descubra mais <span class="laranja">sobre nossa causa</span></h1>
             <p>Conheça nossa história, missão e os esforços contínuos dedicados à preservação do Rio Una, <span class="negrito azul">e descubra como sua participação pode ajudar a proteger esse recurso natural essencial, garantindo um futuro mais sustentável.</span></p>
-
         </div>
 
         <div>
             <img src="./img/SOS.svg" alt="">
         </div>
     </main>
+
+    <section class="objetivos container">
+        <h1 class="objetivos-title">Nossos <span class="laranja">Objetivos</span></h1>
+
+        <ul class="objetivos-itens">
+            <li>
+                <h1 class="obj-title">Água Potável e Saneamento</h1>
+                <p>Trabalhamos para garantir a
+                    <span class="negrito azul">disponibilidade e a gestão sustentável da água.</span></p>
+            </li>
+            <li>
+                <h1 class="obj-title">Vida na Água</h1>
+                <p>Atuamos para preservar e <span class="negrito azul">restaurar a vida
+                    aquática, essencial para o equilíbrio ecológico.</span></p>
+            </li>
+        </ul>
+    </section>
 
     <footer class="footer-bg">
         <div class="footer container">
