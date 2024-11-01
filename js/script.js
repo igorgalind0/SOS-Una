@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const parent = node.parentNode;
 
             if (regex.test(node.nodeValue)) {
-                const newHTML = node.nodeValue.replace(regex, `<span class="highlight">$1</span>`);
+                const newHTML = node.nodeValue.replace(regex, `<span class="marcador">$1</span>`);
                 const span = document.createElement('span');
                 span.innerHTML = newHTML;
                 parent.replaceChild(span, node);
@@ -121,7 +121,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         // Rola até o primeiro destaque encontrado
-        const highlighted = document.querySelector('.highlight');
+        const highlighted = document.querySelector('.marcador');
         if (highlighted) {
             highlighted.scrollIntoView({ behavior: 'smooth', block: 'center' });
         }
@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function removeHighlights() {
         // Remove o destaque ao substituir os elementos de volta ao texto normal
-        const highlights = document.querySelectorAll('.highlight');
+        const highlights = document.querySelectorAll('.marcador');
         highlights.forEach((el) => {
             el.outerHTML = el.innerText; // Substitui o <span> pelo texto
         });

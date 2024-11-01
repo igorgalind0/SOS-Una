@@ -1,0 +1,20 @@
+.historia {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.historia-title {
+    font-size: 3rem;
+    color: var(--cor-2-b);
+}
+
+.historia-text {
+    font-size: 1.5rem;
+    width: 40ch;
+}
+
+.historia-img {
+    border-radius: 8px;
+}

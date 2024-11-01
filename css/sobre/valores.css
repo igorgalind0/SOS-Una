@@ -1,0 +1,41 @@
+.valores {
+    margin-top: 50px;
+}
+.valores-title {
+    font-size: 3rem;
+    color: var(--cor-2-b);
+    text-align: center;
+}
+
+.valores-itens {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.valores-itens li {
+    background: #f1f1f1;
+    width: 500px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.valores-itens li div {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+
+.valores-itens li h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--cor-2-b);
+}
+
+.valores-itens li p {
+    font-size: 1.125rem;
+    text-align: center;
+    color: var(--cor-2-b);
+    margin-top: 10px !important;
+}
+

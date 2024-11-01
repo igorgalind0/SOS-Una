@@ -8,7 +8,7 @@
     --cor-3-b: #fff;
 }
 
-body.dark-mode {
+/* body.dark-mode {
     --cor-1-b: #FB8500;
     --cor-1-b2: #d67200;
 
@@ -16,7 +16,7 @@ body.dark-mode {
     --cor-2-b2: #d67200;
 
     --cor-3-b: #fff;
-}
+} */
 
 body.dark-mode .azul {
     color: #FB8500;
