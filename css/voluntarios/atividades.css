@@ -1,0 +1,49 @@
+.atividades {
+    margin-top: 50px;
+}
+
+.atividades > h1 {
+    font-size: 3rem;
+    color: var(--cor-2-b);
+    text-align: center;
+}
+
+.atividades > p {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.atividades-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.atividades-lista li {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.atividades-lista h1 {
+    font-size: 2rem;
+    color: var(--cor-2-b);
+    margin-top: 20px;
+}
+
+.atividades-lista p {
+    font-size: 1.5rem;
+}
+
+.atividades-lista li div img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    height: 300px;
+}
+
+.atividades-lista li:nth-child(odd) {
+    text-align: right;
+}

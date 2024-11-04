@@ -65,83 +65,36 @@ radioButtons.forEach((radio, index) => {
 });
 
 //Abrir modal
-const openModalButton = document.querySelector('.openModal');
-const closeModalButton = document.querySelector('.closeModal');
-const projectDialog = document.getElementById('projectDialog');
-
-openModalButton.addEventListener('click', () => {
+document.addEventListener('DOMContentLoaded', () => {
+    const openModalButton = document.querySelector('.openModal');
+    const closeModalButton = document.querySelector('.closeModal');
+    const projectDialog = document.getElementById('projectDialog');
     
-    projectDialog.showModal();
-});
-
-closeModalButton.addEventListener('click', () => {
-    projectDialog.close();
+    openModalButton.addEventListener('click', () => {
+        
+        projectDialog.showModal();
+    });
+    
+    closeModalButton.addEventListener('click', () => {
+        projectDialog.close();
+    });
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-    const searchInput = document.getElementById('pesquisaInput');
+    const button = document.querySelector('.button');
 
-    // Recupera o termo de pesquisa do Local Storage, se existir
-    const savedSearchTerm = localStorage.getItem('searchTerm');
-    if (savedSearchTerm) {
-        searchInput.value = savedSearchTerm;
-        highlightTerm(savedSearchTerm); // Destaca o termo salvo
-    }
+    button.addEventListener('click', function (event) {
+        event.preventDefault(); // Previne o comportamento padrão do link
 
-    // Adiciona um evento de escuta ao campo de entrada para detectar quando o usuário pressiona a tecla Enter
-    searchInput.addEventListener('keypress', (event) => {
-        if (event.key === 'Enter') {
-            const searchTerm = searchInput.value.trim();
+        const targetId = button.getAttribute('href'); // Pega o valor do href
+        const targetElement = document.querySelector(targetId); // Seleciona o elemento alvo
 
-            if (searchTerm) {
-                localStorage.setItem('searchTerm', searchTerm); // Salva o termo no Local Storage
-                highlightTerm(searchTerm);
-            }
-        }
-    });
-
-    function highlightTerm(term) {
-        // Remove o destaque existente
-        removeHighlights();
-
-        // Encontra todos os nós de texto e aplica o destaque
-        const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null, false);
-        let node;
-
-        while (node = walker.nextNode()) {
-            const regex = new RegExp(`(${term})`, 'gi');
-            const parent = node.parentNode;
-
-            if (regex.test(node.nodeValue)) {
-                const newHTML = node.nodeValue.replace(regex, `<span class="marcador">$1</span>`);
-                const span = document.createElement('span');
-                span.innerHTML = newHTML;
-                parent.replaceChild(span, node);
-            }
-        }
-
-        // Rola até o primeiro destaque encontrado
-        const highlighted = document.querySelector('.marcador');
-        if (highlighted) {
-            highlighted.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        }
-
-        // Limpa o campo de pesquisa
-        searchInput.value = '';
-    }
-
-    function removeHighlights() {
-        // Remove o destaque ao substituir os elementos de volta ao texto normal
-        const highlights = document.querySelectorAll('.marcador');
-        highlights.forEach((el) => {
-            el.outerHTML = el.innerText; // Substitui o <span> pelo texto
-        });
-    }
-
-    // Limpa o termo salvo no Local Storage quando o usuário clicar fora do campo de entrada
-    document.addEventListener('click', (event) => {
-        if (event.target !== searchInput) {
-            localStorage.removeItem('searchTerm'); // Limpa o termo ao clicar fora
+        if (targetElement) {
+            targetElement.scrollIntoView({
+                behavior: 'smooth', // Efeito de rolagem suave
+                block: 'start' // Alinha o topo do elemento no topo da janela
+            });
         }
     });
 });
+

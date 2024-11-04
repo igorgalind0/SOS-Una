@@ -1,0 +1,49 @@
+.voluntarios {
+    margin-top: 50px;
+}
+
+.voluntarios > h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: var(--cor-2-b);
+}
+
+.voluntarios > p {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.voluntarios-itens {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.voluntarios-itens li {
+    background: #f1f1f1;
+    justify-content: center;
+    border-radius: 8px;
+    width: 500px;
+    padding: 20px;
+}
+
+.voluntarios-itens h1 {
+    font-size: 1.5rem;
+    color: var(--cor-2-b);
+
+    position: relative;
+}
+
+.voluntarios-itens h1::before{
+    content: '';
+    width: 20px;
+    height: 5px;
+    background: #FB8500;
+    position: absolute;
+}
+
+.voluntarios-itens p {
+    font-size: 1.125rem;
+}

@@ -1,0 +1,48 @@
+.voluntariar {
+    margin-top: 50px;
+}
+
+.voluntariar > h1 {
+    font-size: 3rem;
+    color: var(--cor-2-b);
+    text-align: center;
+}
+
+.voluntariar > p {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.voluntariar-passos {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.voluntariar-passos li {
+    background: #f1f1f1;
+    width: 300px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.voluntariar-passos h1 {
+    font-size: 1.5rem;
+    color: var(--cor-2-b);
+    text-align: center;
+}
+
+.voluntariar-passos p {
+    font-size: 1.125rem;
+    text-align: center;
+}
+
+.voluntariar-passos .button {
+    font-size: 1rem;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+
+}

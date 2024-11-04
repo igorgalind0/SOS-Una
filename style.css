@@ -18,3 +18,8 @@
 @import url("./css/sobre/objetivos.css");
 @import url("./css/sobre/historia.css");
 @import url("./css/sobre/valores.css");
+
+@import url("./css/voluntarios/voluntario.css");
+@import url("./css/voluntarios/voluntariar.css");
+@import url("./css/voluntarios/atividades.css");
+@import url("./css/voluntarios/form-voluntarios.css");
