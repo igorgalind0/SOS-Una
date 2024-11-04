@@ -98,3 +98,22 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+// Perguntas Frequentes (FAQ)
+
+const faq = document.querySelectorAll('.faq button');
+
+function ativaFaq(event) {
+    const faq = event.currentTarget;
+    const controls = faq.getAttribute("aria-controls");
+    const resposta = document.getElementById(controls);
+
+    resposta.classList.toggle('ativa');
+    const ativa = resposta.classList.contains("ativa");
+    faq.setAttribute("aria-expanded", ativa);
+}
+
+function eventFaq(faq) {
+    faq.addEventListener('click', ativaFaq);
+}
+
+faq.forEach(eventFaq);

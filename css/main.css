@@ -161,7 +161,6 @@ button {
 
 button:hover {
     background-color: var(--cor-2-b2);;
-    transform: scale(1.05);
 }
 
 button[type="button"] {
@@ -170,7 +169,6 @@ button[type="button"] {
 
 button[type="button"]:hover {
     background-color: var(--cor-2-b2);;
-    transform: scale(1.05);
 }
 
 .buttons {
