@@ -17,10 +17,27 @@
     font-size: 1.125rem;
     font-weight: bold;
     transition: .2s;
+    position: relative;
 }
 
 .header-menu a:hover {
     color: #FB8500;
+}
+
+.header-menu a::after {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 0px;
+    background-color: #FB8500;
+    margin-top: 4px;
+    transition: 0.3s;
+    position: absolute;
+}
+
+.header-menu a:hover:after,
+.header-menu a.ativo::after {
+    width: 100%;
 }
 
 .menu {
