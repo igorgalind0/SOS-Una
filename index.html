@@ -26,7 +26,7 @@
                 <ul class="header-menu">
                     <li><a href="./sobre.html">Sobre nós</a></li>
                     <li><a href="./voluntarios.html">Voluntários</a></li>
-                    <li><a href="#">Doações</a></li>
+                    <li><a href="./doacoes.html">Doações</a></li>
                     <li><a href="#">Objetivos</a></li>
                 </ul>
             </nav>
@@ -100,8 +100,8 @@
             </dialog>
 
         </div>
-        <div class="slide">
-            <div class="img-intro fadeInDown" data-anime="800">
+        <div class="slide fadeInDown" data-anime="800">
+            <div class="img-intro">
                 <img src="./img/RioUna.JPG" alt="Rio Una" class="slide active">
                 <img src="./img/Una.JPG" alt="Rio Una" class="slide enter">
             </div>
@@ -116,12 +116,16 @@
 
     <section class="ods-itens container fadeInDown" data-anime="600">
         <div class="ods">
-            <a href="#"><img src="./img/ODS-6.svg" alt=""></a>
+            <a href="#" class="openModal"><img src="./img/ODS-6.svg" alt=""></a>
         </div>
         <div class="ods">
-            <a href="#"><img src="./img/ODS-14.svg" alt=""></a>
+            <a href="#" class="openModal"><img src="./img/ODS-14.svg" alt=""></a>
         </div>
         </div>
+
+        <dialog id="modalODS6">
+
+        </dialog>
     </section>
     
     <section class="sobre container">

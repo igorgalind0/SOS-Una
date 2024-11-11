@@ -1,0 +1,50 @@
+.doacoes  {
+    margin-top: 50px;
+}
+
+.doar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.doar div > h1 {
+    font-size: 3rem;
+    color: var(--cor-2-b);
+    text-align: left;
+}
+
+.doar div > p {
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.doar div > img {
+    width: 100%;;
+}
+
+.doar-destino {
+    margin-top: 50px;
+}
+
+.doar-destino h1 {
+    font-size: 3rem;
+    color: var(--cor-2-b);
+    text-align: center;
+}
+
+.doar-destino ul {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.doar-destino li {
+    background: #f1f1f1;
+    padding: 30px;
+    width: 400px;
+    border-radius: 8px;
+    text-align: center;
+    align-self: center;
+    font-size: 1.5rem;
+}

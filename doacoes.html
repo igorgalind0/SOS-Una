@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./img/flat-icon.svg" type="image/x-icon">
-    <title>Voluntários</title>
+    <title>Doações</title>
 </head>
 <body>
     
@@ -50,168 +50,30 @@
         </div>
     </header>
 
-    <main class="voluntarios container">
-        <h1>Por que <span class="laranja">voluntariar?</span></h1>
-        <p>Ser voluntário no SOS Rio Una é mais do que doar seu tempo, é uma oportunidade para aprender, <span class="negrito azul">conectar-se com a comunidade e fazer a diferença em prol do meio ambiente.</span></span></p>
+    <main class="doacoes container">
+        <div class="doar">
+            <div>
+                <h1>Por que <span class="laranja">Doar?</span></h1>
+                <p>Apoiar o SOS Rio Una significa investir na <span class="negrito azul">preservação do rio, promovendo limpeza, reflorestamento e educação ambiental.</span> </p>
 
-        <ul class="voluntarios-itens">
-            <li>
-                <h1>Aprendizado e Experiência Prática</h1>
-                <p>Participe de atividades de campo e adquira conhecimentos sobre <span class="negrito azul">preservação ambiental, sustentabilidade e restauração ecológica.</span></p>
-            </li>
-            <li>
-                <h1>Novas Conexões e Amizades</h1>
-                <p>Trabalhe ao lado de pessoas que compartilham o mesmo interesse por um <span class="negrito azul">futuro mais verde e construa amizades duradouras.</span></p>
-            </li>
-            <li>
-                <h1>Desenvolvimento Pessoal</h1>
-                <p>Voluntariar-se fortalece habilidades como liderança, trabalho em equipe e comunicação, <span class="negrito azul">essenciais tanto no ambiente profissional quanto pessoal.</span></p>
-            </li>
-            <li>
-                <h1>Impacto Social e Ambiental</h1>
-                <p>Ajude a transformar o Rio Una e a <span class="negrito azul">criar um ambiente mais saudável e sustentável para as futuras gerações.</span></p>
-            </li>
-        </ul>
-    </main>
-
-    <section class="voluntariar container">
-        <h1>Como Se <span class="laranja">Tornar um Voluntário</span></h1>
-        <p>Passo a passo para <span class="negrito azul">inscrição como voluntário.</span></p>
-
-        <ul class="voluntariar-passos">
-            <li>
-                <h1>Passo 1</h1>
-                <p>Acesse nosso <span class="negrito azul">formulário de inscrição.</span></p>
-                <a class="button" href="#formulario-voluntarios">Acesse o formulário</a>
-
-            </li>
-
-            <li>
-                <h1>Passo 2</h1>
-                <p>Preencha suas <span class="negrito azul">informações básicas e escolha as áreas de interesse.</span></p>
-            </li>
-
-            <li>
-                <h1>Passo 3</h1>
-                <p>Envie o formulário e aguarde nosso contato <span class="negrito azul">para as próximas ações</span></p>
-            </li>
-        </ul>
-    </section>
-
-    <section class="atividades container">
-        <h1>Atividades dos <span class="laranja">voluntários</span></h1>
-        <p>Se liga nas atividades <span class="negrito azul">feitas por nossos voluntários!</span></p>
-
-        <ul class="atividades-lista">
-            <li>
-                <div>
-                    <h1>Mutirões de <span class="laranja">Limpeza</span></h1>
-                    <p>Contribua para a remoção de resíduos das margens do Rio Una, <span class="negrito azul">melhorando o ambiente natural e reduzindo a poluição.</span></p>
-                </div>
-                <div>
-                    <img src="./img/atividades/atv1.jpg" alt="">
-                </div>
-
-            </li>
-            <li>
-                <div>
-                    <img src="./img/atividades/atv2.jpg" alt="">
-                </div>
-
-                <div>
-                    <h1>Campanhas de <span class="laranja">Conscientização</span></h1>
-                    <p>Ajude a sensibilizar a comunidade sobre a importância da <span class="negrito azul">preservação do Rio Una por meio de eventos e ações interativas.</span></p>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <h1>Eventos <span class="laranja">Educativos</span></h1>
-                    <p>Apoie workshops e palestras, <span class="negrito azul">promovendo conhecimento sobre práticas sustentáveis e proteção ambiental.</span>
-                    </p>
-                </div>
-
-                <div>
-                    <img src="./img/atividades/atv3.jpg" alt="">
-                </div>
-            </li>
-        </ul>
-    </section>
-
-    <section id="formulario-voluntarios" class="container">
-        <form class="form" action="#" method="post">
-            <h2>Seja um <span class="laranja">Voluntário!</span></h2>
-            <p>Preencha o formulário para <span class="negrito azul">ser um voluntário!</span></p>
-            
-            <label for="firstName">Nome:</label>
-            <input type="text" id="firstName" name="firstName" required>
-            
-            <label for="lastName">Sobrenome:</label>
-            <input type="text" id="lastName" name="lastName" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="contributionArea">Qual área quer contribuir:</label>
-            <select id="contributionArea" name="contributionArea" required>
-                <option value="" disabled selected>Selecione uma área</option>
-                <option value="design">Saúde</option>
-                <option value="desenvolvimento">Limpeza</option>
-                <option value="marketing">Reciclagem</option>
-                <option value="gestao">Habitação</option>
-                <option value="outros">Outros</option>
-            </select>
-            
-            <label for="city">Cidade:</label>
-            <input type="text" id="city" name="city" required>
-            
-            <label for="phone">Número de Telefone:</label>
-            <input type="tel" id="phone" name="phone" placeholder="(xx) xxxxx-xxxx">
-            
-            <label for="comments">Comentários:</label>
-            <textarea id="comments" name="comments" rows="4" placeholder="Deixe seus comentários aqui..."></textarea>
-            
-            <div class="buttons">
-                <button type="submit">Enviar</button>
-                <button type="reset">Limpar</button>
+                <a class="button openModal" href="#">Faça uma doação!</a>
             </div>
-        </form>
-    </section>
 
-    <article class="faq-bg container">
-
-        <h1 class="faq-title">FAQ<span class="cor-azul">.</span></h1>
-
-        <div class="faq">
-            <dl>
-                <div>
-                    <dt><button aria-controls="faq1" aria-expanded="false">Por que devo me voluntariar no SOS Rio Una?</button></dt>
-                    <dd id="faq1">Voluntariar-se no SOS Rio Una é uma oportunidade de contribuir para a preservação ambiental, aprender sobre sustentabilidade e fazer parte de uma rede de pessoas que se preocupam com o futuro do Rio Una.
-                    </dd>
-                </div>
-                <div>
-                    <dt><button aria-controls="faq2" aria-expanded="false">Quais requisitos preciso para ser voluntário?
-                    </button></dt>
-                    <dd id="faq2">Não há requisitos específicos para se tornar voluntário, apenas o interesse em ajudar. Todos são bem-vindos, independentemente da experiência, e receberão orientação para participar das atividades.
-                    </dd>
-                </div>
-                <div>
-                    <dt><button aria-controls="faq3" aria-expanded="false">Quais atividades posso realizar como voluntário?</button></dt>
-                    <dd id="faq3">Nossos voluntários participam de mutirões de limpeza, ações de reflorestamento, campanhas de conscientização e eventos educativos para a preservação do Rio Una.
-                    </dd>
-                </div>
-                <div>
-                    <dt><button aria-controls="faq4" aria-expanded="false">Preciso pagar alguma taxa para ser voluntário?</button></dt>
-                    <dd id="faq4">Não, não há custos para participar como voluntário. Todo o suporte necessário será fornecido pelo projeto, e contamos apenas com sua disposição para colaborar!
-                    </dd>
-                </div>
-                <div>
-                    <dt><button class="btfq" aria-controls="faq5" aria-expanded="false">Como faço para me inscrever como voluntário?</button></dt>
-                    <dd id="faq5">Basta preencher o formulário disponível na seção "Seja um voluntário" em nosso site. Entraremos em contato para informar sobre as próximas ações e orientações!
-                    </dd>
-                </div>
-            </dl>
+            <div>
+                <img src="./img/doacoes/doar.jpg" alt="">
+            </div>
         </div>
-    </article>
+
+        <div class="doar-destino">
+            <h1>Qual o <span class="laranja">destino das doações?</span></h1>
+
+            <ul>
+                <li>Realização de <span class="negrito azul">Eventos Ambientais</span></li>
+                <li>Aquisição de <span class="negrito azul">Materiais Essenciais</span></li>
+                <li>Fortalecimento de <span class="negrito azul">Iniciativas Ambientais</span></li>
+            </ul>
+        </div>
+    </main>
 
     <footer class="footer-bg">
         <div class="footer container">

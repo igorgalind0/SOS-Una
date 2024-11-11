@@ -27,8 +27,9 @@
 .header-menu a::after {
     content: '';
     display: block;
-    height: 5px;
+    height: 3px;
     width: 0px;
+    border-radius: 10px;
     background-color: #FB8500;
     margin-top: 4px;
     transition: 0.3s;
