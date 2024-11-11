@@ -56,12 +56,25 @@
                 <h1>Por que <span class="laranja">Doar?</span></h1>
                 <p>Apoiar o SOS Rio Una significa investir na <span class="negrito azul">preservação do rio, promovendo limpeza, reflorestamento e educação ambiental.</span> </p>
 
-                <a class="button openModal" href="#">Faça uma doação!</a>
+                <a class="button openModalDoar" href="#">Faça uma doação!</a>
             </div>
 
             <div>
                 <img src="./img/doacoes/doar.jpg" alt="">
             </div>
+
+            <dialog id="modalDoar">
+                <h1>Faça <span class="laranja">uma doação!</span></h1>
+                <div class="modal-content">
+                    <img src="./img/pix.jpg" alt="QR Code">
+                    <div>
+                        <p><strong>Agência:</strong> 1234-5</p>
+                        <p><strong>Conta:</strong> 009288182932</p>
+                        <p><strong>Favorecido:</strong> Igor Galindo da Silva</p>
+                        <button class="btn-close" id="closeModalDoar">Fechar</button>
+                    </div>
+                </div>
+            </dialog>
         </div>
 
         <div class="doar-destino">
@@ -75,10 +88,58 @@
         </div>
     </main>
 
+    <section class="depoimentos container">
+        <h1>Depoimentos de <span class="laranja">Donatários</span></h1>
+        <p>Veja um pouco dos depoimentos dos <span class="negrito azul">nossos doadores e voluntários!</span></p>
+        <ul>
+            <li>
+                <span></span>
+                <p>Contribuir para o SOS Rio Una foi mais do que uma doação; <span class="negrito azul">foi uma forma de fazer parte de uma mudança real.</span></p>
+                <h2>João, doador e voluntário</h2>
+            </li>
+            <li>
+                <span></span>
+                <p>Saber que meu apoio está ajudando a <span class="negrito azul">restaurar o Rio Una me deixa extremamente feliz.</span></p>
+                <h2>Marina, doadora recorrente</h2>
+            </li>
+        </ul>
+    </section>
+
+    <section class="parceiros container" aria-label="Nossos Parceiros">
+        <h2 class="container">Nossos <span class="laranja">parceiros. </span></h2>
+
+        <ul>
+            <li><img src="./img/logos/amazon.svg" alt=""></li>
+            <li><img src="./img/logos/apple.svg" alt=""></li>
+            <li><img src="./img/logos/jbl.svg" alt=""></li>
+            <li><img src="./img/logos/samsung.svg" alt=""></li>
+            <li><img src="./img/logos/paypal.svg" alt=""></li>
+            <li><img src="./img/logos/tesla.svg" alt=""></li>
+            <li><img src="./img/logos/nubank.svg" alt=""></li>
+            <li><img src="./img/logos/steam.svg" alt=""></li>
+        </ul>
+    </section>
+
+    <section class="newsletter container">
+        <div class="newsletter-conteudo">
+            <h1 class="newsletter-title">Nossa <span class="laranja">Newsletter!</span></h1>
+            <p class="newsletter-text">
+                Acompanhe novidades e <span class="negrito azul">progresso do SOS UNA através do e-mail.</span> 
+            </p>
+        </div>
+        <form action="GET">
+            <label for="email" class="newsletter-label">Seu e-mail:</label>
+            <div>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                <button class="button" type="submit">Inscrever-se</button>
+            </div>
+        </form>
+    </section>
+
     <footer class="footer-bg">
         <div class="footer container">
             <div class="footer-img">
-                <img src="./logo2.svg" alt="">
+                <a href="./index.html"><img src="./logo2.svg" alt=""></a>
             </div>
             <div class="footer-itens">
                 <div class="footer-social">
@@ -102,9 +163,9 @@
                 <div class="footer-paginas">
                     <h1>Páginas</h1>
                     <ul>
-                        <li><a href="#">Sobre nós</a></li>
-                        <li><a href="#">Voluntários</a></li>
-                        <li><a href="#">Doações</a></li>
+                        <li><a href="./sobre.html">Sobre nós</a></li>
+                        <li><a href="./voluntarios.html">Voluntários</a></li>
+                        <li><a href="./doacoes.html">Doações</a></li>
                         <li><a href="#">Objetivos</a></li>
                     </ul>
                 </div>

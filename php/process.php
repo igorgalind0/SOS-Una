@@ -17,7 +17,7 @@ if (isset($_POST['nome'], $_POST['sobrenome'], $_POST['email'], $_POST['contribu
     'hora_envio' => date('H:i:s')
   ];
 
-  // Compo E-mail
+  // Campo E-mail
   $nome = $_POST['nome'];
   $sobrenome = $_POST['sobrenome'];
   $email = $_POST['email'];
@@ -52,7 +52,7 @@ if (isset($_POST['nome'], $_POST['sobrenome'], $_POST['email'], $_POST['contribu
   // Enviar e-mail
   if (mail($destino, $assunto, $arquivo, $headers)) {
     // Redirecionar para a página de confirmação
-    header("Location: confirmation.php");
+    header("Location: ./php/confirmation.php");
     exit();
   } else {
     echo "Erro ao enviar o e-mail.";

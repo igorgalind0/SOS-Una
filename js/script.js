@@ -136,3 +136,18 @@ faq.forEach(eventFaq);
 if (window.SimpleAnime) {
     new SimpleAnime();
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const openModalButton = document.querySelector('.openModalDoar');
+    const closeModalButton = document.querySelector('.btn-close');
+    const projectDialog = document.getElementById('modalDoar');
+    
+    openModalButton.addEventListener('click', () => {
+        
+        projectDialog.showModal();
+    });
+    
+    closeModalButton.addEventListener('click', () => {
+        projectDialog.close();
+    });
+});

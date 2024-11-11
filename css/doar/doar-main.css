@@ -24,7 +24,7 @@
 }
 
 .doar-destino {
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 .doar-destino h1 {
@@ -47,4 +47,27 @@
     text-align: center;
     align-self: center;
     font-size: 1.5rem;
+}
+
+#modalDoar h1 {
+    font-size: 3rem;
+    color: var(--cor-2-b);
+    text-align: center;
+}
+
+#modalDoar img {
+    width: 300px;
+}
+
+.modal-content {
+    display: flex;
+    align-items: center;
+}
+
+.modal-content div > p > strong {
+    color: var(--cor-2-b);
+}
+
+.modal-content p {
+    margin: 5px !important;
 }
