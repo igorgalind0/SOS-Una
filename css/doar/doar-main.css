@@ -57,10 +57,13 @@
 
 #modalDoar img {
     width: 300px;
+    border-radius: 8px;
 }
 
 .modal-content {
+    margin-top: 30px;
     display: flex;
+    gap: 20px;
     align-items: center;
 }
 
