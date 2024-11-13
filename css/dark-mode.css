@@ -1,17 +1,123 @@
 .dark-mode {
-    background-color: #121212;
-    color: #ffffff;
+    background-color: #121212; /* Define a cor de fundo para o modo escuro */
+    color: var(--cor-3-b); /* Define a cor do texto para o modo escuro */
 }
 
 body.dark-mode h1,
 .dark-mode p {
-    color: #e0e0e0;
+    color: #e0e0e0; /* Define a cor do texto de h1 e p no modo escuro */
 }
 
 .dark-mode a {
-    color: #FB8500;
+    color: var(--cor-1-b); /* Define a cor dos links no modo escuro */
 }
 
 .dark-mode .parceiros img {
-    color: #fff;
+    color: var(--cor-3-b); /* Define a cor das imagens dentro de .parceiros no modo escuro */
+}
+
+.dark-mode dialog {
+    background: #1e1e1e; /* Define a cor de fundo para o elemento <dialog> no modo escuro */
+}
+
+.dark-mode dialog form {
+    color: var(--cor-3-b); /* Define a cor do texto no formulário dentro de <dialog> no modo escuro */
+}
+
+.dark-mode .intro-title,
+.dark-mode .intro-text {
+    color: var(--cor-3-b); /* Define a cor do texto dentro de .intro-title e .intro-text no modo escuro */
+}
+
+.dark-mode .local-title {
+    color: var(--cor-3-b); /* Define a cor do texto dentro de .local-title no modo escuro */
+}
+
+body.dark-mode .azul {
+    color: var(--cor-1-b); /* Define a cor de elementos com a classe .azul no modo escuro */
+}
+
+.dark-mode h2 {
+    color: var(--cor-3-b); /* Define a cor do texto de h2 no modo escuro */
+}
+
+.dark-mode .parceiros img {
+    filter: brightness(0) invert(1); /* Aplica um filtro para inverter as cores das imagens em .parceiros no modo escuro */
+}
+
+.dark-mode .newsletter-label {
+    color: var(--cor-3-b); /* Define a cor do texto em .newsletter-label no modo escuro */
+}
+
+body.dark-mode a {
+    color: var(--cor-3-b); /* Define a cor dos links no modo escuro */
+}
+
+body.dark-mode a:hover {
+    color: var(--cor-1-b); /* Altera a cor dos links quando o mouse passa sobre eles no modo escuro */
+}
+
+.dark-mode .img-logo {
+    color: var(--cor-3-b); /* Define a cor do logo no modo escuro */
+}
+
+.dark-mode .footer-bg {
+    background: #121212; /* Define a cor de fundo do rodapé no modo escuro */
+}
+
+.dark-mode .ajuda li h1,
+.dark-mode .ajuda li p {
+    color: var(--cor-2-b); /* Define a cor do texto em .ajuda dentro de h1 e p no modo escuro */
+}
+
+.dark-mode .voluntarios-itens h1,
+.dark-mode .voluntarios-itens p {
+    color: var(--cor-2-b); /* Define a cor do texto em .voluntarios-itens no modo escuro */
+}
+
+body.dark-mode .voluntariar-passos h1,
+body.dark-mode .voluntariar-passos p {
+    color: var(--cor-2-b); /* Define a cor do texto em .voluntariar-passos no modo escuro */
+}
+
+body.dark-mode #formulario-voluntarios label {
+    color: var(--cor-3-b); /* Define a cor dos labels no formulário de voluntários no modo escuro */
+}
+
+body.dark-mode .faq dl > div:nth-child(even) button {
+    color: var(--cor-3-b); /* Define a cor do texto do botão nos itens pares da FAQ no modo escuro */
+}
+
+body.dark-mode .faq dl > div:nth-child(odd) dd {
+    color: var(--cor-2-b); /* Define a cor do texto nos itens ímpares da FAQ no modo escuro */
+}
+
+.dark-mode .obj-title {
+    color: var(--cor-2-b); /* Define a cor do título dentro de .obj-title no modo escuro */
+}
+
+.dark-mode .objetivos p {
+    color: #1e1e1e; /* Define a cor do texto em .objetivos no modo escuro */
+}
+
+body.dark-mode .doar h1,
+body.dark-mode #modalDoar h1,
+body.dark-mode #modalDoar strong {
+    color: var(--cor-3-b); /* Define a cor do texto em h1 e strong dentro de #modalDoar no modo escuro */
+}
+
+body.dark-mode .doar-destino li,
+body.dark-mode .depoimentos li > p,
+body.dark-mode .depoimentos h2 {
+    color: var(--cor-2-b); /* Define a cor do texto em .doar-destino, .depoimentos li e h2 no modo escuro */
+}
+
+body.dark-mode .artigo-ods h2,
+body.dark-mode .artigo-ods h1,
+body.dark-mode .artigo-ods h3 {
+    color: var(--cor-3-b); /* Define a cor do texto nos títulos dentro de .artigo-ods no modo escuro */
+}
+
+body.dark-mode .share-buttons a:hover {
+    color: var(--cor-3-b); /* Altera a cor dos links em .share-buttons ao passar o mouse no modo escuro */
 }

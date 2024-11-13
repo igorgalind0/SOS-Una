@@ -1,20 +1,20 @@
 .historia {
-    margin-top: 50px;
-    display: flex;
-    align-items: center;
-    gap: 20px;
+    margin-top: 50px; /* Adiciona uma margem superior de 50px à seção de história */
+    display: flex; /* Define a estrutura da seção como flexível */
+    align-items: center; /* Alinha verticalmente os itens ao centro */
+    gap: 20px; /* Adiciona um espaçamento de 20px entre os itens */
 }
 
 .historia-title {
-    font-size: 3rem;
-    color: var(--cor-2-b);
+    font-size: 3rem; /* Define o tamanho da fonte do título como 3rem */
+    color: var(--cor-2-b); /* Define a cor do título com a variável --cor-2-b */
 }
 
 .historia-text {
-    font-size: 1.5rem;
-    width: 40ch;
+    font-size: 1.5rem; /* Define o tamanho da fonte do texto como 1.5rem */
+    width: 40ch; /* Define a largura do texto como 40 caracteres (aproximadamente) */
 }
 
 .historia-img {
-    border-radius: 8px;
+    border-radius: 8px; /* Adiciona bordas arredondadas à imagem */
 }

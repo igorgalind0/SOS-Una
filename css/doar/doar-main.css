@@ -1,88 +1,76 @@
-.doacoes  {
-    margin-top: 50px;
+.doacoes {
+    margin-top: 50px; /* Adiciona uma margem superior de 50px à seção de doações */
 }
 
 .doar {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
+    display: grid; /* Define a estrutura da seção de doação como grid */
+    grid-template-columns: 1fr 1fr; /* Divide o conteúdo em duas colunas de largura igual */
+    align-items: center; /* Alinha verticalmente os itens no centro */
 }
 
 .doar div > h1 {
-    font-size: 3rem;
-    color: var(--cor-2-b);
-    text-align: left;
+    font-size: 3rem; /* Define o tamanho da fonte do título como 3rem */
+    color: var(--cor-2-b); /* Define a cor do título com a variável --cor-2-b */
+    text-align: left; /* Alinha o título à esquerda */
 }
 
 .doar div > p {
-    font-size: 1.5rem;
-    text-align: left;
+    font-size: 1.5rem; /* Define o tamanho da fonte do texto como 1.5rem */
+    text-align: left; /* Alinha o texto à esquerda */
 }
 
 .doar div > img {
-    width: 100%;;
+    width: 100%; /* Define a imagem para ocupar toda a largura disponível */
 }
 
 .doar-destino {
-    margin-top: 100px;
+    margin-top: 100px; /* Adiciona uma margem superior de 100px à seção de destino das doações */
 }
 
 .doar-destino h1 {
-    font-size: 3rem;
-    color: var(--cor-2-b);
-    text-align: center;
+    font-size: 3rem; /* Define o tamanho da fonte do título como 3rem */
+    color: var(--cor-2-b); /* Define a cor do título com a variável --cor-2-b */
+    text-align: center; /* Alinha o título ao centro */
 }
 
 .doar-destino ul {
-    margin-top: 20px;
-    display: flex;
-    gap: 20px;
+    margin-top: 20px; /* Adiciona uma margem superior de 20px à lista */
+    display: flex; /* Define a lista como flexível */
+    gap: 20px; /* Adiciona um espaço de 20px entre os itens da lista */
 }
 
 .doar-destino li {
-    background: #f1f1f1;
-    padding: 30px;
-    width: 400px;
-    border-radius: 8px;
-    text-align: center;
-    align-self: center;
-    font-size: 1.5rem;
+    background: #f1f1f1; /* Define o fundo dos itens da lista como #f1f1f1 */
+    padding: 30px; /* Adiciona 30px de padding aos itens da lista */
+    width: 400px; /* Define a largura dos itens da lista como 400px */
+    border-radius: 8px; /* Adiciona bordas arredondadas aos itens da lista */
+    text-align: center; /* Alinha o texto dentro dos itens da lista ao centro */
+    align-self: center; /* Alinha verticalmente os itens no centro */
+    font-size: 1.5rem; /* Define o tamanho da fonte do texto como 1.5rem */
 }
 
 #modalDoar h1 {
-    font-size: 3rem;
-    color: var(--cor-2-b);
-    text-align: center;
+    font-size: 3rem; /* Define o tamanho da fonte do título do modal como 3rem */
+    color: var(--cor-2-b); /* Define a cor do título do modal com a variável --cor-2-b */
+    text-align: center; /* Alinha o título do modal ao centro */
 }
 
 #modalDoar img {
-    width: 300px;
-    border-radius: 8px;
+    width: 300px; /* Define a largura da imagem do modal como 300px */
+    border-radius: 8px; /* Adiciona bordas arredondadas à imagem do modal */
 }
 
 .modal-content {
-    margin-top: 30px;
-    display: flex;
-    gap: 20px;
-    align-items: center;
+    margin-top: 30px; /* Adiciona uma margem superior de 30px à seção de conteúdo do modal */
+    display: flex; /* Define a estrutura do conteúdo do modal como flexível */
+    gap: 20px; /* Adiciona um espaço de 20px entre os itens dentro do conteúdo do modal */
+    align-items: center; /* Alinha verticalmente os itens no centro */
 }
 
 .modal-content div > p > strong {
-    color: var(--cor-2-b);
+    color: var(--cor-2-b); /* Define a cor do texto forte dentro do parágrafo do conteúdo do modal com a variável --cor-2-b */
 }
 
 .modal-content p {
-    margin: 5px !important;
-}
-
-body.dark-mode .doar h1,
-body.dark-mode #modalDoar h1,
-body.dark-mode #modalDoar strong {
-    color: var(--cor-3-b);
-}
-
-body.dark-mode .doar-destino li,
-body.dark-mode .depoimentos li > p,
-body.dark-mode .depoimentos h2 {
-    color: var(--cor-2-b);
+    margin: 5px !important; /* Adiciona uma margem de 5px aos parágrafos dentro do conteúdo do modal, com a prioridade !important */
 }

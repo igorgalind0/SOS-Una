@@ -1,41 +1,41 @@
 .valores {
-    margin-top: 50px;
+    margin-top: 50px; /* Adiciona uma margem superior de 50px à seção de valores */
 }
+
 .valores-title {
-    font-size: 3rem;
-    color: var(--cor-2-b);
-    text-align: center;
+    font-size: 3rem; /* Define o tamanho da fonte do título da seção de valores */
+    color: var(--cor-2-b); /* Define a cor do título usando a variável --cor-2-b */
+    text-align: center; /* Centraliza o título horizontalmente */
 }
 
 .valores-itens {
-    margin-top: 20px;
-    display: flex;
-    gap: 20px;
+    margin-top: 20px; /* Adiciona uma margem superior de 20px à lista de itens */
+    display: flex; /* Usa o modelo flexbox para os itens dentro da lista */
+    gap: 20px; /* Adiciona um espaçamento de 20px entre os itens */
 }
 
 .valores-itens li {
-    background: #f1f1f1;
-    width: 500px;
-    padding: 20px;
-    border-radius: 8px;
+    background: #f1f1f1; /* Define o fundo dos itens como uma cor clara */
+    width: 500px; /* Define a largura dos itens da lista */
+    padding: 20px; /* Adiciona um preenchimento de 20px em torno do conteúdo dos itens */
+    border-radius: 8px; /* Adiciona bordas arredondadas de 8px aos itens */
 }
 
 .valores-itens li div {
-    display: flex;
-    gap: 5px;
-    justify-content: center;
+    display: flex; /* Usa flexbox para o layout interno dentro de cada item */
+    gap: 5px; /* Adiciona um espaçamento de 5px entre os elementos dentro do div */
+    justify-content: center; /* Centraliza os elementos dentro do div */
 }
 
 .valores-itens li h1 {
-    text-align: center;
-    font-size: 1.5rem;
-    color: var(--cor-2-b);
+    text-align: center; /* Centraliza o texto do título dentro de cada item */
+    font-size: 1.5rem; /* Define o tamanho da fonte do título dentro dos itens */
+    color: var(--cor-2-b); /* Define a cor do título usando a variável --cor-2-b */
 }
 
 .valores-itens li p {
-    font-size: 1.125rem;
-    text-align: center;
-    color: var(--cor-2-b);
-    margin-top: 10px !important;
+    font-size: 1.125rem; /* Define o tamanho da fonte do parágrafo dentro dos itens */
+    text-align: center; /* Centraliza o texto do parágrafo dentro dos itens */
+    color: var(--cor-2-b); /* Define a cor do texto usando a variável --cor-2-b */
+    margin-top: 10px !important; /* Adiciona uma margem superior de 10px ao parágrafo, com prioridade */
 }
-

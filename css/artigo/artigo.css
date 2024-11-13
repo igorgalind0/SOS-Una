@@ -1,79 +1,69 @@
 /* Estilos gerais para o artigo ODS */
 .artigo-ods {
-    margin-top: 50px;
-    text-align: justify;
+    margin-top: 50px; /* Espaço superior para a seção */
+    text-align: justify; /* Alinha o texto de forma justificada */
 }
 
 .artigo-ods h1 {
-    margin-top: 20px;
-    font-size: 3rem;
-    color: var(--cor-2-b);
+    margin-top: 20px; /* Margem superior para o título principal */
+    font-size: 3rem; /* Tamanho grande para o título */
+    color: var(--cor-2-b); /* Cor definida pela variável --cor-2-b */
 }
 
 .artigo-ods h2 {
-    margin-top: 20px;
-    font-size: 2rem;
-    color: var(--cor-2-b);
-    padding: 5px;
+    margin-top: 20px; /* Margem superior para o subtítulo */
+    font-size: 2rem; /* Tamanho médio para subtítulo */
+    color: var(--cor-2-b); /* Cor para o subtítulo */
+    padding: 5px; /* Espaçamento interno para o subtítulo */
 }
 
 .artigo-ods h3 {
-    font-size: 1rem;
-    font-weight: 600;
-    margin-top: 20px;
-    color: var(--cor-2-b);
+    font-size: 1rem; /* Tamanho menor para o terceiro nível de título */
+    font-weight: 600; /* Negrito para destaque */
+    margin-top: 20px; /* Margem superior */
+    color: var(--cor-2-b); /* Cor para o subtítulo */
 }
 
 .artigo-ods p {
-    font-size: 1.125rem;
+    font-size: 1.125rem; /* Tamanho médio para os parágrafos */
 }
 
 /* Estilos para o vídeo */
 .video {
-    margin: 50px 0;
-    position: relative;
-    padding-bottom: 56.25%; /* Proporção 16:9 */
-    height: 0;
-    overflow: hidden;
-    border-radius: 10px; /* Borda arredondada */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra */
-    background-color: #000; /* Fundo preto */
+    margin: 50px 0; /* Margem superior e inferior para o vídeo */
+    position: relative; /* Necessário para posicionamento do iframe */
+    padding-bottom: 56.25%; /* Proporção 16:9 (altura / largura = 9 / 16) */
+    height: 0; /* Inicializa a altura para a proporção */
+    overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse o limite */
+    border-radius: 10px; /* Borda arredondada para o vídeo */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra suave ao redor */
+    background-color: #000; /* Fundo preto para o vídeo */
 }
 
 .video iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: none; /* Remove a borda padrão */
-    border-radius: 10px; /* Borda arredondada */
+    position: absolute; /* Posiciona o iframe em relação ao contêiner */
+    top: 0; /* Alinha ao topo do contêiner */
+    left: 0; /* Alinha à esquerda do contêiner */
+    width: 100%; /* Faz o iframe ocupar toda a largura do contêiner */
+    height: 100%; /* Faz o iframe ocupar toda a altura do contêiner */
+    border: none; /* Remove a borda padrão do iframe */
+    border-radius: 10px; /* Borda arredondada no iframe */
 }
 
 /* Estilos para os botões de compartilhamento */
 .share-buttons button,
 .share-buttons a {
-    background-color: var(--cor-1-b);
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    background-color: var(--cor-1-b); /* Cor de fundo do botão */
+    color: var(--cor-3-b); /* Cor do texto do botão */
+    border: none; /* Remove borda padrão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border-radius: 5px; /* Borda arredondada */
+    cursor: pointer; /* Aponta o cursor como mãozinha */
+    transition: background-color 0.3s; /* Transição suave para mudança de cor */
 }
 
 /* Efeito de hover nos botões */
 .share-buttons button:hover,
 .share-buttons a:hover {
-    background-color: var(--cor-2-b);
-}
-
-body.dark-mode .artigo-ods h2,
-body.dark-mode .artigo-ods h1,
-body.dark-mode .artigo-ods h3 {
-    color: var(--cor-3-b);
-}
-
-body.dark-mode .share-buttons a:hover {
-    color: var(--cor-3-b);
+    background-color: var(--cor-2-b); /* Muda a cor de fundo ao passar o mouse */
 }

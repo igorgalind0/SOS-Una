@@ -1,45 +1,45 @@
 .depoimentos {
-    margin-top: 100px;
+    margin-top: 100px; /* Adiciona uma margem superior de 100px à seção de depoimentos */
 }
 
 .depoimentos h1 {
-    text-align: center;
-    font-size: 3rem;
-    color: var(--cor-2-b);
+    text-align: center; /* Alinha o título da seção ao centro */
+    font-size: 3rem; /* Define o tamanho da fonte do título como 3rem */
+    color: var(--cor-2-b); /* Define a cor do título com a variável --cor-2-b */
 }
 
 .depoimentos ul {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    gap: 50px;
+    margin-top: 20px; /* Adiciona uma margem superior de 20px à lista de depoimentos */
+    display: flex; /* Define a lista de depoimentos como flexível */
+    justify-content: center; /* Centraliza os itens dentro da lista */
+    gap: 50px; /* Adiciona um espaço de 50px entre os itens da lista */
 }
 
 .depoimentos li {
-    width: 500px;
-    padding: 30px;
-    background: #f1f1f1;
-    border-radius: 8px;
+    width: 500px; /* Define a largura dos itens da lista de depoimentos como 500px */
+    padding: 30px; /* Adiciona 30px de padding aos itens da lista */
+    background: #f1f1f1; /* Define o fundo dos itens da lista como #f1f1f1 */
+    border-radius: 8px; /* Adiciona bordas arredondadas aos itens da lista */
 }
 
 .depoimentos li > span {
-    display: block;
-    margin: 0 auto;
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    background: #fff;
+    display: block; /* Exibe o span como um bloco */
+    margin: 0 auto; /* Centraliza o span horizontalmente */
+    border-radius: 50%; /* Torna o span um círculo */
+    width: 80px; /* Define a largura do span como 80px */
+    height: 80px; /* Define a altura do span como 80px */
+    background: var(--cor-3-b); /* Define o fundo do span com a variável --cor-3-b */
 }
 
 .depoimentos p {
-    font-size: 1.5rem;
-    margin-top: 10px !important;
-    text-align: center;
+    font-size: 1.5rem; /* Define o tamanho da fonte do parágrafo como 1.5rem */
+    margin-top: 10px !important; /* Adiciona uma margem superior de 10px ao parágrafo, com !important */
+    text-align: center; /* Alinha o texto ao centro */
 }
 
 .depoimentos h2 {
-    font-size: 1.125rem;
-    text-align: center;
-    font-weight: 400;
-    font-style: italic;
+    font-size: 1.125rem; /* Define o tamanho da fonte do subtítulo como 1.125rem */
+    text-align: center; /* Alinha o subtítulo ao centro */
+    font-weight: 400; /* Define o peso da fonte como normal (400) */
+    font-style: italic; /* Aplica itálico ao subtítulo */
 }

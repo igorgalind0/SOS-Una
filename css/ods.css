@@ -1,15 +1,14 @@
 .ods-itens {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 50px;
-
+    display: flex;                    /* Define o layout como flexbox */
+    gap: 20px;                         /* Adiciona um espaço de 20px entre os itens */
+    justify-content: center;           /* Centraliza os itens ao longo do eixo principal */
+    margin-top: 50px;                  /* Adiciona uma margem superior de 50px */
 }
 
 .ods {
-    transition: .2s;
+    transition: .2s;                   /* Define uma transição de 0.2 segundos para efeitos em propriedades */
 }
 
 .ods:hover {
-    scale: 1.04;
+    scale: 1.04;                       /* Aplica um aumento de escala de 4% no item ao passar o mouse sobre ele */
 }

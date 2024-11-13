@@ -1,31 +1,31 @@
 body {
-    margin: 0;
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    margin: 0; /* Remove a margem padrão do corpo da página */
+    font-family: 'Poppins', Arial, Helvetica, sans-serif; /* Define a fonte principal para o corpo da página */
 }
 
 h1, h2, h3, h4, ul, blockquote, dd, dt, input{
-    margin: 0;
-    padding: 0;
+    margin: 0; /* Remove a margem padrão desses elementos */
+    padding: 0; /* Remove o preenchimento padrão desses elementos */
 }
 
 ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    margin: 0; /* Remove a margem da lista não ordenada */
+    padding: 0; /* Remove o preenchimento da lista não ordenada */
+    list-style: none; /* Remove os marcadores (bolinhas) da lista */
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    color: inherit; /* Faz com que a cor do link herde a cor do elemento pai */
 }
 
 img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+    max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho do seu contêiner */
+    height: auto; /* Faz com que a altura da imagem seja proporcional à largura */
+    display: block; /* Faz a imagem se comportar como um bloco, eliminando o espaçamento inferior */
 }
 
 /* Bloqueia o scroll do body */
 .no-scroll {
-    overflow: hidden;
+    overflow: hidden; /* Impede que a página tenha rolagem (scroll) */
 }

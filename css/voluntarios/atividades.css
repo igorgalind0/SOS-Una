@@ -1,49 +1,49 @@
 .atividades {
-    margin-top: 50px;
+    margin-top: 50px; /* Adiciona uma margem superior de 50px à seção de atividades */
 }
 
 .atividades > h1 {
-    font-size: 3rem;
-    color: var(--cor-2-b);
-    text-align: center;
+    font-size: 3rem; /* Define o tamanho da fonte do título da seção de atividades */
+    color: var(--cor-2-b); /* Define a cor do título usando a variável --cor-2-b */
+    text-align: center; /* Centraliza o título horizontalmente */
 }
 
 .atividades > p {
-    font-size: 1.5rem;
-    text-align: center;
-    margin-bottom: 30px;
+    font-size: 1.5rem; /* Define o tamanho da fonte do parágrafo */
+    text-align: center; /* Centraliza o texto do parágrafo */
+    margin-bottom: 30px; /* Adiciona uma margem inferior de 30px ao parágrafo */
 }
 
 .atividades-lista {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+    display: flex; /* Usa o modelo flexbox para a lista de atividades */
+    flex-direction: column; /* Organiza os itens da lista de forma vertical */
+    gap: 30px; /* Adiciona um espaçamento de 30px entre os itens da lista */
 }
 
 .atividades-lista li {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    display: grid; /* Usa o modelo grid para o layout dos itens */
+    grid-template-columns: 1fr 1fr; /* Define duas colunas de igual tamanho para os itens */
+    gap: 20px; /* Adiciona um espaçamento de 20px entre os elementos dentro do grid */
 }
 
 .atividades-lista h1 {
-    font-size: 2rem;
-    color: var(--cor-2-b);
-    margin-top: 20px;
+    font-size: 2rem; /* Define o tamanho da fonte do título dentro da lista de atividades */
+    color: var(--cor-2-b); /* Define a cor do título usando a variável --cor-2-b */
+    margin-top: 20px; /* Adiciona uma margem superior de 20px ao título dentro da lista */
 }
 
 .atividades-lista p {
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* Define o tamanho da fonte do parágrafo dentro da lista de atividades */
 }
 
 .atividades-lista li div img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    object-fit: cover;
-    height: 300px;
+    width: 100%; /* Faz a imagem ocupar toda a largura do contêiner */
+    height: auto; /* Ajusta a altura da imagem proporcionalmente à largura */
+    border-radius: 8px; /* Adiciona bordas arredondadas de 8px à imagem */
+    object-fit: cover; /* Ajusta a imagem para cobrir todo o espaço disponível, sem distorcer */
+    height: 300px; /* Define uma altura fixa de 300px para as imagens */
 }
 
 .atividades-lista li:nth-child(odd) {
-    text-align: right;
+    text-align: right; /* Alinha o conteúdo do item nas posições ímpares à direita */
 }

@@ -1,83 +1,79 @@
 .footer-bg {
-    margin-top: 100px;
-    background-color: #023047;
-    color: #ffffff;
-    padding: 50px 0;
+    margin-top: 100px; /* Adiciona uma margem superior de 100px para o rodapé */
+    background-color: var(--cor-2-b); /* Define a cor de fundo do rodapé */
+    color: var(--cor-3-b); /* Define a cor do texto no rodapé */
+    padding: 50px 0; /* Adiciona preenchimento de 50px nas partes superior e inferior do rodapé */
 }
 
 .footer-itens {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    margin-top: 50px;
+    display: grid; /* Define o layout como grid */
+    grid-template-columns: 1fr 1fr; /* Cria duas colunas de tamanhos iguais */
+    gap: 40px; /* Adiciona um espaçamento de 40px entre as colunas */
+    margin-top: 50px; /* Adiciona uma margem superior de 50px */
 }
 
 .social-lista li {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    font-weight: 500;
-    font-size: 1.125rem;
-    padding: 8px 0;
-    transition: color 0.3s;
+    display: flex; /* Usa o modelo de layout flexbox */
+    align-items: center; /* Alinha verticalmente os itens no centro */
+    gap: 15px; /* Adiciona um espaçamento de 15px entre os itens */
+    font-weight: 500; /* Define a espessura da fonte como 500 (meio negrito) */
+    font-size: 1.125rem; /* Define o tamanho da fonte para 1.125rem */
+    padding: 8px 0; /* Adiciona um preenchimento de 8px na parte superior e inferior */
+    transition: color 0.3s; /* Adiciona uma transição suave de 0.3 segundos para a cor */
 }
 
 .social-lista li a {
-    color: #ffffff;
-    transition: color .3s;
+    color: var(--cor-3-b); /* Define a cor do link dentro do item da lista */
+    transition: color .3s; /* Transição suave da cor do link */
 }
 
 .social-lista li a:hover {
-    color: #ffb703;
+    color: var(--cor-1-b); /* Altera a cor do link quando o mouse passa sobre ele */
 }
 
 .social-lista li img {
-    width: 30px;
-    transition: transform 0.3s;
+    width: 30px; /* Define a largura das imagens para 30px */
+    transition: transform 0.3s; /* Adiciona uma transição suave para transformações */
 }
 
 .footer-social h1 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    position: relative;
+    font-size: 1.5rem; /* Define o tamanho da fonte para o título de seção como 1.5rem */
+    margin-bottom: 10px; /* Adiciona uma margem inferior de 10px */
+    position: relative; /* Define a posição do título como relativa para ajustes de layout */
 }
 
 .footer-paginas h1 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    position: relative;
+    font-size: 1.5rem; /* Define o tamanho da fonte para o título da seção de páginas */
+    margin-bottom: 10px; /* Adiciona uma margem inferior de 10px */
+    position: relative; /* Define a posição do título como relativa */
 }
 
 .footer h1::before {
-    content: '';
-    width: 20px;
-    height: 5px;
-    top: -5px;
-    background: #FB8500;
-    position: absolute;
+    content: ''; /* Cria um elemento vazio antes do título */
+    width: 20px; /* Define a largura da linha antes do título */
+    height: 5px; /* Define a altura da linha antes do título */
+    top: -5px; /* Posiciona a linha ligeiramente acima do título */
+    background: var(--cor-1-b); /* Define a cor de fundo da linha */
+    position: absolute; /* Posiciona a linha de forma absoluta em relação ao título */
 }
 
 .footer-paginas ul {
-    list-style: none;
-    padding: 0;
+    list-style: none; /* Remove os marcadores (bolinhas) da lista */
+    padding: 0; /* Remove o preenchimento da lista */
 }
 
 .footer-paginas li {
-    padding: 5px 0;
-    transition: color 0.3s;
+    padding: 5px 0; /* Adiciona um preenchimento de 5px na parte superior e inferior de cada item */
+    transition: color 0.3s; /* Adiciona uma transição suave de cor ao passar o mouse */
 }
 
 .footer-paginas li a {
-    font-size: 1.125rem;
-    color: #ffffff;
-    text-decoration: none;
-    transition: color 0.3s;
+    font-size: 1.125rem; /* Define o tamanho da fonte para os links nas páginas */
+    color: #ffffff; /* Define a cor do link como branca */
+    text-decoration: none; /* Remove o sublinhado do link */
+    transition: color 0.3s; /* Transição suave da cor do link */
 }
 
 .footer-paginas li a:hover {
-    color: #ffb703;
-}
-
-.dark-mode .footer-bg {
-    background: #121212;
+    color: var(--cor-1-b); /* Altera a cor do link quando o mouse passa sobre ele */
 }

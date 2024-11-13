@@ -1,157 +1,164 @@
+/* .header */
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    margin-top: 50px;
+    display: flex; /* Define que o container da header será um flexbox para organizar os elementos em linha. */
+    justify-content: space-between; /* Espaça os itens do header de forma a ter os elementos nas extremidades (esquerda e direita). */
+    align-items: center; /* Alinha os itens verticalmente ao centro. */
+    gap: 20px; /* Define o espaçamento entre os elementos do header. */
+    margin-top: 50px; /* Adiciona uma margem superior de 50px para separar o header do conteúdo superior. */
 }
 
+/* .header-menu */
 .header-menu {
-    display: flex;
-    gap: 20px;
-    align-items: center;
+    display: flex; /* Define que os itens do menu também serão organizados em linha. */
+    gap: 20px; /* Adiciona um espaçamento de 20px entre os itens do menu. */
+    align-items: center; /* Alinha os itens do menu verticalmente ao centro. */
 }
 
+/* Links dentro do header-menu */
 .header-menu a{
-    color: #023047;
-    font-size: 1.125rem;
-    font-weight: bold;
-    transition: .2s;
-    position: relative;
+    color: var(--cor-2-b); /* Define a cor do texto dos links usando uma variável de cor personalizada. */
+    font-size: 1.125rem; /* Define o tamanho da fonte dos links. */
+    font-weight: bold; /* Torna o texto dos links em negrito. */
+    transition: .2s; /* Define uma transição suave de 0.2 segundos para as propriedades alteradas. */
+    position: relative; /* Permite o posicionamento de pseudo-elementos dentro do link. */
 }
 
+/* Estilo ao passar o mouse sobre o link */
 .header-menu a:hover {
-    color: #FB8500;
+    color: var(--cor-1-b); /* Muda a cor do texto quando o mouse passa sobre o link. */
 }
 
+/* Adiciona um pseudo-elemento após o link */
 .header-menu a::after {
-    content: '';
-    display: block;
-    height: 3px;
-    width: 0px;
-    border-radius: 10px;
-    background-color: #FB8500;
-    margin-top: 4px;
-    transition: 0.3s;
-    position: absolute;
+    content: ''; /* Cria um pseudo-elemento vazio após o link. */
+    display: block; /* Faz com que o pseudo-elemento se comporte como um bloco. */
+    height: 3px; /* Define a altura da linha do pseudo-elemento. */
+    width: 0px; /* Inicialmente, a largura da linha é zero. */
+    border-radius: 10px; /* Arredonda as bordas da linha. */
+    background-color: var(--cor-1-b); /* Define a cor da linha com uma variável personalizada. */
+    margin-top: 4px; /* Adiciona um espaçamento entre o texto do link e a linha. */
+    transition: 0.3s; /* Define uma transição suave de 0.3 segundos para a largura da linha. */
+    position: absolute; /* Permite o posicionamento absoluto do pseudo-elemento dentro do link. */
 }
 
+/* Estilo quando o link está ativo ou o mouse passa sobre o link */
 .header-menu a:hover:after,
 .header-menu a.ativo::after {
-    width: 100%;
+    width: 100%; /* Expande a largura da linha para 100% do tamanho do link. */
 }
 
+/* .menu */
 .menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 50px;
+    display: flex; /* Define que o menu será um flexbox. */
+    justify-content: space-between; /* Espaça os itens do menu nas extremidades. */
+    align-items: center; /* Alinha os itens verticalmente ao centro. */
+    gap: 50px; /* Adiciona um espaçamento de 50px entre os itens do menu. */
 }
 
+/* .button-mode */
 .button-mode {
-    position: relative;
-    width: 60px;
-    height: 30px;
-    background-color: #FB8500;
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
-    outline: none;
-    transition: background-color 0.3s ease;
+    position: relative; /* Permite o posicionamento dos elementos internos, como a bolinha de troca de modo. */
+    width: 60px; /* Define a largura do botão de modo. */
+    height: 30px; /* Define a altura do botão de modo. */
+    background-color: var(--cor-1-b); /* Define a cor de fundo do botão de modo. */
+    border: none; /* Remove a borda do botão. */
+    border-radius: 15px; /* Arredonda as bordas do botão. */
+    cursor: pointer; /* Define o cursor como 'pointer' para indicar que é clicável. */
+    outline: none; /* Remove o contorno padrão do botão. */
+    transition: background-color 0.3s ease; /* Define uma transição suave para a cor de fundo. */
 }
 
+/* Estilo do botão de modo ao passar o mouse */
 .button-mode:hover {
-    background-color: #d67200;
+    background-color: var(--cor-1-b2); /* Muda a cor de fundo do botão ao passar o mouse. */
 }
 
+/* .toggle-ball */
 .toggle-ball {
-    position: absolute;
-    top: 50%;
-    left: 5px;
-    width: 22px;
-    height: 22px;
-    background-color: #fff;
-    border-radius: 50%;
-    transform: translateY(-50%);
-    transition: left 0.3s ease;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: absolute; /* Posiciona a bolinha de forma absoluta dentro do botão. */
+    top: 50%; /* Alinha a bolinha verticalmente ao centro do botão. */
+    left: 5px; /* Posiciona a bolinha inicialmente à esquerda. */
+    width: 22px; /* Define a largura da bolinha. */
+    height: 22px; /* Define a altura da bolinha. */
+    background-color: var(--cor-3-b); /* Define a cor de fundo da bolinha. */
+    border-radius: 50%; /* Torna a bolinha redonda. */
+    transform: translateY(-50%); /* Alinha verticalmente a bolinha ao centro com base na sua altura. */
+    transition: left 0.3s ease; /* Transição suave para o movimento horizontal da bolinha. */
+    display: flex; /* Torna a bolinha um flex container (útil para centralizar ícones dentro dela, por exemplo). */
+    justify-content: center; /* Centraliza o conteúdo dentro da bolinha. */
+    align-items: center; /* Alinha os ícones (se houver) ao centro da bolinha. */
 }
 
+/* Estilo do botão de modo ativo */
 .button-mode.active {
-    background-color: #023047;
-    transition: .2s;
+    background-color: var(--cor-2-b); /* Muda a cor de fundo do botão de modo quando está ativo. */
+    transition: .2s; /* Transição suave para a mudança de cor. */
 }
 
+/* Estilo ao passar o mouse sobre o botão de modo ativo */
 .button-mode.active:hover {
-    background: #011f2e;
+    background: #011f2e; /* Muda a cor de fundo do botão de modo ativo ao passar o mouse. */
 }
 
-
+/* Posição da bolinha quando o modo está ativo */
 .button-mode.active .toggle-ball {
-    left: calc(100% - 5px - 22px);
+    left: calc(100% - 5px - 22px); /* Move a bolinha para a extremidade direita quando o modo está ativo. */
 }
 
+/* Ícones do sol e da lua */
 .icon-sun,
 .icon-moon {
-    width: 14px;
-    height: 14px;
-    position: absolute;
+    width: 14px; /* Define a largura dos ícones. */
+    height: 14px; /* Define a altura dos ícones. */
+    position: absolute; /* Posiciona os ícones de forma absoluta dentro da bolinha. */
 }
 
+/* Estilo do ícone do sol quando o modo está ativo */
 .button-mode.active .icon-sun {
-    display: none;
+    display: none; /* Esconde o ícone do sol quando o modo está ativo. */
 }
 
+/* Estilo do ícone da lua quando o modo está ativo */
 .button-mode.active .icon-moon {
-    display: block;
+    display: block; /* Exibe o ícone da lua quando o modo está ativo. */
 }
 
+/* Estilo inicial do ícone do sol */
 .button-mode .icon-sun {
-    display: block;
-    position: absolute;
+    display: block; /* Exibe o ícone do sol por padrão. */
+    position: absolute; /* Posiciona o ícone do sol dentro da bolinha. */
 }
 
+/* Estilo inicial do ícone da lua */
 .button-mode .icon-moon {
-    display: none;
-    position: absolute;
+    display: none; /* Esconde o ícone da lua por padrão. */
+    position: absolute; /* Posiciona o ícone da lua dentro da bolinha. */
 }
 
-/* DARK MODE */
-body.dark-mode a {
-    color: #fff;
-}
-
-body.dark-mode a:hover {
-    color: #FB8500;
-}
-
+/* .img-logo */
 .img-logo {
-    color: #023047;
+    color: var(--cor-2-b); /* Define a cor da logo utilizando uma variável CSS personalizada. */
 }
 
-.dark-mode .img-logo {
-    color: white;
-}
-
+/* .pesquisa */
 .pesquisa {
-    display: flex;
-    gap: 5px;
-    align-items: center;
-    border: 1px solid #ccc;
-    background: #f1f1f1;
-    width: 200px;
-    border-radius: 8px;
-    padding: 5px 10px;
-    color: #4b4b4b;
+    display: flex; /* Organiza os itens da barra de pesquisa em linha. */
+    gap: 5px; /* Define um pequeno espaçamento entre os itens. */
+    align-items: center; /* Alinha os itens verticalmente ao centro. */
+    border: 1px solid #ccc; /* Define a cor da borda da barra de pesquisa. */
+    background: #f1f1f1; /* Define o fundo da barra de pesquisa. */
+    width: 200px; /* Define a largura da barra de pesquisa. */
+    border-radius: 8px; /* Arredonda as bordas da barra de pesquisa. */
+    padding: 5px 10px; /* Adiciona espaçamento interno à barra de pesquisa. */
+    color: #4b4b4b; /* Define a cor do texto da barra de pesquisa. */
 }
 
+/* Estilo do input dentro da pesquisa */
 #pesquisaInput {
-    padding: 4px;
-    border: none;
-    background: transparent;
-    width: 100%;
-    outline: none;
-    font-size: 1.125rem;
+    padding: 4px; /* Adiciona espaçamento interno ao campo de input. */
+    border: none; /* Remove a borda do campo de input. */
+    background: transparent; /* Define o fundo como transparente. */
+    width: 100%; /* Faz o campo de input ocupar toda a largura disponível. */
+    outline: none; /* Remove o contorno padrão do campo de input. */
+    font-size: 1.125rem; /* Define o tamanho da fonte do campo de input. */
 }

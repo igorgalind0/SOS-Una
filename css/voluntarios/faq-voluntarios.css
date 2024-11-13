@@ -1,87 +1,86 @@
 .faq-title {
-    font-size: 3rem;
-    margin-top: 50px;
-    color: var(--cor-2-b);
+    font-size: 3rem; /* Define o tamanho da fonte do título da FAQ */
+    margin-top: 50px; /* Adiciona uma margem superior de 50px ao título */
+    color: var(--cor-2-b); /* Define a cor do título utilizando a variável --cor-2-b */
 }
 
 .faq dd {
-    font-size: 1.25rem;
+    font-size: 1.25rem; /* Define o tamanho da fonte dos detalhes da FAQ */
 }
 
 .faq dt {
-    display: flex; /* Usando flexbox para alinhar dt e dd */
-    justify-content: space-between; /* Espaço entre os itens */
-    align-items: center; /* Alinha verticalmente */
+    display: flex; /* Usa o modelo flexbox para alinhar os itens de dt e dd */
+    justify-content: space-between; /* Coloca espaço entre os itens */
+    align-items: center; /* Alinha verticalmente os itens */
 }
 
 .faq dt button {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--cor-2-b); 
-    transition: none; /* Remove transições para o botão */
+    font-size: 1.5rem; /* Define o tamanho da fonte do botão */
+    font-weight: 600; /* Torna a fonte do botão em negrito */
+    color: var(--cor-2-b); /* Define a cor do botão */
+    transition: none; /* Remove as transições para o botão */
 }
 
 .faq dl > div {
-    padding: 20px;
-    border-radius: 8px;
+    padding: 20px; /* Adiciona 20px de preenchimento ao redor do conteúdo */
+    border-radius: 8px; /* Adiciona bordas arredondadas de 8px aos itens */
 }
 
 .faq dl > div:nth-child(odd) {
-    background-color: #f1f1f1; /* Cor de fundo mais clara para alternar as linhas */
+    background-color: #f1f1f1; /* Altera a cor de fundo para uma cor mais clara nas linhas ímpares */
 }
 
 .faq button {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    align-items: center;
-    gap: 8px;
-    cursor: pointer;
-    border: none;
-    width: 100%;
-    text-align: left;
-    background: none;
-    color: var(--cor-2-b); /* Cor do texto do botão */
-    transition: none; /* Remove transições para evitar efeito de scale */
+    display: grid; /* Usa o modelo grid para o layout do botão */
+    grid-template-columns: auto 1fr auto; /* Define as colunas do grid */
+    align-items: center; /* Alinha os itens do botão verticalmente */
+    gap: 8px; /* Adiciona um espaço de 8px entre os itens */
+    cursor: pointer; /* Altera o cursor para indicar que o botão é clicável */
+    border: none; /* Remove a borda do botão */
+    width: 100%; /* Faz o botão ocupar toda a largura disponível */
+    text-align: left; /* Alinha o texto à esquerda */
+    background: none; /* Remove o fundo do botão */
+    color: var(--cor-2-b); /* Define a cor do texto do botão */
+    transition: none; /* Remove as transições para o botão */
 }
 
 .faq button::before {
-    content: "";
-    display: inline-block;
-    width: 12px;
-    height: 8px;
-    background-color: var(--cor-1-b);
+    content: ""; /* Adiciona um conteúdo vazio antes do botão */
+    display: inline-block; /* Faz o conteúdo ser um bloco inline */
+    width: 12px; /* Define a largura do conteúdo */
+    height: 8px; /* Define a altura do conteúdo */
+    background-color: var(--cor-1-b); /* Define a cor de fundo do conteúdo antes do botão */
 }
 
 .faq button::after {
-    content: "";
-    display: inline-block;
-    width: 20px;
-    height: 10px;
-    background: url("../../img/seta.svg") no-repeat;
-    transition: .2s;
+    content: ""; /* Adiciona um conteúdo vazio após o botão */
+    display: inline-block; /* Faz o conteúdo ser um bloco inline */
+    width: 20px; /* Define a largura do conteúdo */
+    height: 10px; /* Define a altura do conteúdo */
+    background: url("../../img/seta.svg") no-repeat; /* Define a seta como imagem de fundo */
+    transition: .2s; /* Adiciona uma transição suave ao conteúdo */
 }
- 
+
 .faq button[aria-expanded="true"]::after {
-    transform: rotate(180deg);
+    transform: rotate(180deg); /* Rotaciona a seta quando o conteúdo é expandido */
 }
 
 .faq button:hover {
     /* Não faz nada ao passar o mouse sobre o botão */
-    background: none; /* Para garantir que não há alteração de fundo */
+    background: none; /* Para garantir que o fundo não mude */
     color: var(--cor-2-b); /* Mantém a cor do texto */
 }
 
 .faq dd {
-    max-height: 0; /* Altura inicial */
+    max-height: 0; /* Define a altura inicial como 0 (esconde o conteúdo) */
     overflow: hidden; /* Esconde o conteúdo que ultrapassa a altura */
-    transition: max-height 0.3s ease; /* Transição suave */
-    opacity: 0; /* Inicia com opacidade zero */
-    transition: max-height 0.3s ease, opacity 0.3s ease; /* Transição para altura e opacidade */
-
+    transition: max-height 0.3s ease; /* Transição suave para a altura */
+    opacity: 0; /* Torna o conteúdo invisível inicialmente */
+    transition: max-height 0.3s ease, opacity 0.3s ease; /* Transições para altura e opacidade */
 }
 
 .faq dd.ativa {
-    max-height: 200px; /* Define um valor suficiente para acomodar o conteúdo */
+    max-height: 200px; /* Define a altura máxima suficiente para o conteúdo */
     opacity: 1; /* Torna o conteúdo visível */
-    padding: 15px 40px;
+    padding: 15px 40px; /* Adiciona preenchimento ao conteúdo */
 }

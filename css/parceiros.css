@@ -1,44 +1,36 @@
 .parceiros {
-    margin-top: 100px;
+    margin-top: 100px;               /* Adiciona uma margem superior de 100px */
 }
 
 .parceiros h2 {
-    text-align: center;
-    font-size: 3rem;
-    color: #023047;
+    text-align: center;              /* Alinha o título no centro */
+    font-size: 3rem;                 /* Define o tamanho da fonte como 3rem */
+    color: #023047;                  /* Define a cor do título como a cor azul escura */
 }
 
 .parceiros ul {
-    max-width: 1400px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    padding: 0 20px;
-    margin: 50px 0 auto;
+    max-width: 1400px;               /* Define a largura máxima da lista como 1400px */
+    display: grid;                   /* Define o layout da lista como grid */
+    grid-template-columns: repeat(4, 1fr); /* Cria quatro colunas de largura igual */
+    padding: 0 20px;                 /* Adiciona preenchimento de 20px à esquerda e à direita */
+    margin: 50px 0 auto;             /* Adiciona uma margem de 50px em cima e embaixo, e centraliza a lista */
 }
 
 .parceiros li {
-    padding: 32px;
-    display: flex;
-    border-left: 3px solid #f1f1f1;
+    padding: 32px;                   /* Define o preenchimento das listas como 32px */
+    display: flex;                   /* Exibe os itens da lista como flexbox */
+    border-left: 3px solid #f1f1f1;  /* Adiciona uma borda à esquerda com 3px de espessura e cor #f1f1f1 */
 }
 
 .parceiros img {
-    margin: auto;
+    margin: auto;                    /* Centraliza as imagens dentro de seu contêiner */
 }
 
 .parceiros li:first-child,
 .parceiros li:nth-child(5) {
-    border-left: none;
+    border-left: none;               /* Remove a borda à esquerda do primeiro item e do quinto item */
 }
 
 .parceiros li:nth-child(n + 5) {
-    border-top: 3px solid #f1f1f1;
-}
-
-.dark-mode h2 {
-    color: #fff;
-}
-
-.dark-mode .parceiros img {
-    filter: brightness(0) invert(1);
+    border-top: 3px solid #f1f1f1;   /* Adiciona uma borda no topo de cada item a partir do 5º */
 }

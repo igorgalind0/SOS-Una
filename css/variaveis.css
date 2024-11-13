@@ -1,24 +1,9 @@
 :root {
-    --cor-1-b: #FB8500;
-    --cor-1-b2: #d67200;
+    --cor-1-b: #FB8500;  /* Define a primeira cor de base como um tom de laranja brilhante */
+    --cor-1-b2: #d67200; /* Define uma variação mais escura da primeira cor de base */
 
-    --cor-2-b: #023047;
-    --cor-2-b2: #011f2e;
+    --cor-2-b: #023047;  /* Define a segunda cor de base como um tom de azul escuro */
+    --cor-2-b2: #011f2e; /* Define uma variação mais escura da segunda cor de base */
 
-    --cor-3-b: #fff;
+    --cor-3-b: #fff;     /* Define a terceira cor de base como branco */
 }
-
-/* body.dark-mode {
-    --cor-1-b: #FB8500;
-    --cor-1-b2: #d67200;
-
-    --cor-2-b: #FB8500;
-    --cor-2-b2: #d67200;
-
-    --cor-3-b: #fff;
-} */
-
-body.dark-mode .azul {
-    color: #FB8500;
-}
-

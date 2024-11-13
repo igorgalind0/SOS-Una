@@ -1,24 +1,24 @@
+/* .local */
 .local {
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    align-items: center;
+    margin-top: 50px; /* Adiciona uma margem superior de 50px para separar o bloco de conteúdo do elemento acima. */
+    display: grid; /* Define que o layout dessa seção será uma grade (grid). */
+    grid-template-columns: 1fr 1fr; /* Cria duas colunas de tamanho igual (1fração do espaço disponível para cada). */
+    gap: 20px; /* Define um espaço de 20px entre as colunas e linhas da grade. */
+    align-items: center; /* Alinha verticalmente os itens dentro da grade ao centro. */
 }
 
+/* .local-title */
 .local-title {
-    font-size: 3rem;
-    color: #023047;
+    font-size: 3rem; /* Define o tamanho da fonte como 3 vezes o tamanho padrão, para um título grande. */
+    color: var(--cor-2-b); /* Define a cor do título utilizando a variável CSS --cor-2-b. */
 }
 
+/* .local-text */
 .local-text {
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* Define o tamanho da fonte do texto como 1.5 vezes o tamanho padrão. */
 }
 
+/* .local-mapa */
 .local-mapa {
-    border-radius: 30px;
-}
-
-.dark-mode .local-title {
-    color: #fff;
+    border-radius: 30px; /* Arredonda os cantos da imagem ou do elemento com a classe .local-mapa em 30px. */
 }

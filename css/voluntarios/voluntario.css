@@ -1,49 +1,48 @@
 .voluntarios {
-    margin-top: 50px;
+    margin-top: 50px; /* Adiciona uma margem superior de 50px ao elemento com a classe .voluntarios */
 }
 
 .voluntarios > h1 {
-    font-size: 3rem;
-    text-align: center;
-    color: var(--cor-2-b);
+    font-size: 3rem; /* Define o tamanho da fonte como 3rem */
+    text-align: center; /* Centraliza o texto */
+    color: var(--cor-2-b); /* Define a cor do texto usando a variável --cor-2-b */
 }
 
 .voluntarios > p {
-    font-size: 1.5rem;
-    text-align: center;
+    font-size: 1.5rem; /* Define o tamanho da fonte como 1.5rem */
+    text-align: center; /* Centraliza o texto */
 }
 
 .voluntarios-itens {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+    text-align: center; /* Centraliza o texto dentro dos itens */
+    display: flex; /* Usa o modelo flexbox para distribuir os itens */
+    justify-content: center; /* Centraliza os itens ao longo do eixo principal */
+    gap: 20px; /* Adiciona um espaço de 20px entre os itens */
+    flex-wrap: wrap; /* Permite que os itens se envolvam para a próxima linha quando necessário */
 }
 
 .voluntarios-itens li {
-    background: #f1f1f1;
-    justify-content: center;
-    border-radius: 8px;
-    width: 500px;
-    padding: 20px;
+    background: #f1f1f1; /* Define a cor de fundo dos itens como #f1f1f1 */
+    justify-content: center; /* Centraliza os itens dentro do li */
+    border-radius: 8px; /* Adiciona bordas arredondadas de 8px */
+    width: 500px; /* Define a largura de cada item como 500px */
+    padding: 20px; /* Adiciona 20px de preenchimento ao redor do conteúdo */
 }
 
 .voluntarios-itens h1 {
-    font-size: 1.5rem;
-    color: var(--cor-2-b);
-
-    position: relative;
+    font-size: 1.5rem; /* Define o tamanho da fonte do título como 1.5rem */
+    color: var(--cor-2-b); /* Define a cor do texto usando a variável --cor-2-b */
+    position: relative; /* Define a posição do título como relativa para aplicar o pseudo-elemento ::before */
 }
 
-.voluntarios-itens h1::before{
-    content: '';
-    width: 20px;
-    height: 5px;
-    background: #FB8500;
-    position: absolute;
+.voluntarios-itens h1::before {
+    content: ''; /* Cria um pseudo-elemento antes do conteúdo do título */
+    width: 20px; /* Define a largura do pseudo-elemento como 20px */
+    height: 5px; /* Define a altura do pseudo-elemento como 5px */
+    background: var(--cor-1-b); /* Define a cor de fundo do pseudo-elemento usando a variável --cor-1-b */
+    position: absolute; /* Posiciona o pseudo-elemento de forma absoluta em relação ao título */
 }
 
 .voluntarios-itens p {
-    font-size: 1.125rem;
+    font-size: 1.125rem; /* Define o tamanho da fonte do parágrafo como 1.125rem */
 }

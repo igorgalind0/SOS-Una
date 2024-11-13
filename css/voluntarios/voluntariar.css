@@ -1,70 +1,47 @@
 .voluntariar {
-    margin-top: 50px;
+    margin-top: 50px; /* Adiciona uma margem superior de 50px ao elemento com a classe .voluntariar */
 }
 
 .voluntariar > h1 {
-    font-size: 3rem;
-    color: var(--cor-2-b);
-    text-align: center;
+    font-size: 3rem; /* Define o tamanho da fonte como 3rem */
+    color: var(--cor-2-b); /* Define a cor do título usando a variável --cor-2-b */
+    text-align: center; /* Centraliza o título */
 }
 
 .voluntariar > p {
-    font-size: 1.5rem;
-    text-align: center;
+    font-size: 1.5rem; /* Define o tamanho da fonte do parágrafo como 1.5rem */
+    text-align: center; /* Centraliza o texto do parágrafo */
 }
 
 .voluntariar-passos {
-    margin-top: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+    margin-top: 50px; /* Adiciona uma margem superior de 50px ao contêiner de passos */
+    display: flex; /* Usa o modelo flexbox para distribuir os itens dentro do contêiner */
+    flex-wrap: wrap; /* Permite que os itens se envolvam para a próxima linha, se necessário */
+    gap: 20px; /* Adiciona um espaço de 20px entre os itens */
+    justify-content: center; /* Centraliza os itens ao longo do eixo principal */
 }
 
 .voluntariar-passos li {
-    background: #f1f1f1;
-    width: 300px;
-    padding: 20px;
-    border-radius: 8px;
+    background: #f1f1f1; /* Define a cor de fundo dos itens como #f1f1f1 */
+    width: 300px; /* Define a largura de cada item como 300px */
+    padding: 20px; /* Adiciona 20px de preenchimento ao redor do conteúdo */
+    border-radius: 8px; /* Adiciona bordas arredondadas de 8px */
 }
 
 .voluntariar-passos h1 {
-    font-size: 1.5rem;
-    color: var(--cor-2-b);
-    text-align: center;
+    font-size: 1.5rem; /* Define o tamanho da fonte do título como 1.5rem */
+    color: var(--cor-2-b); /* Define a cor do título usando a variável --cor-2-b */
+    text-align: center; /* Centraliza o título */
 }
 
 .voluntariar-passos p {
-    font-size: 1.125rem;
-    text-align: center;
+    font-size: 1.125rem; /* Define o tamanho da fonte do parágrafo como 1.125rem */
+    text-align: center; /* Centraliza o texto do parágrafo */
 }
 
 .voluntariar-passos .button {
-    font-size: 1rem;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-
-}
-
-.dark-mode .voluntarios-itens h1,
-.dark-mode .voluntarios-itens p {
-    color: var(--cor-2-b);
-}
-
-body.dark-mode .voluntariar-passos h1,
-body.dark-mode .voluntariar-passos p {
-    color: var(--cor-2-b);
-}
-
-body.dark-mode #formulario-voluntarios label {
-    color: var(--cor-3-b);
-}
-
-body.dark-mode .faq dl > div:nth-child(even) button{
-    color: var(--cor-3-b);
-}
-
-body.dark-mode .faq dl > div:nth-child(odd) dd {
-    color: var(--cor-2-b);
+    font-size: 1rem; /* Define o tamanho da fonte do botão como 1rem */
+    padding: 20px; /* Adiciona 20px de preenchimento ao redor do conteúdo do botão */
+    display: flex; /* Usa o modelo flexbox para alinhar o botão */
+    justify-content: center; /* Centraliza o conteúdo dentro do botão */
 }

@@ -1,37 +1,40 @@
-//Ativar menu
+// Ativar menu
 const links = document.querySelectorAll(".header-menu a");
 
+// Função para ativar o link correspondente à página atual
 function ativarLink(link) {
-    const url = location.href;
-    const href = link.href;
-    
+    const url = location.href; // URL atual da página
+    const href = link.href; // URL do link
+
+    // Verifica se a URL atual inclui a URL do link, ativando-o se for o caso
     if (url.includes(href)) {
         link.classList.add("ativo");
     }
 }
 
+// Aplica a função ativarLink a cada link do menu
 links.forEach(ativarLink);
 
 // Ativar botão Dark/Light Mode
 document.addEventListener('DOMContentLoaded', () => {
     const button = document.querySelector('.button-mode');
-    
-    // Verificar se o modo escuro está ativado na localStorage
+
+    // Verifica se o modo escuro está ativado no localStorage
     const darkMode = localStorage.getItem('dark-mode');
-    
-    // Se estiver ativado, aplicar o modo escuro
+
+    // Aplica o modo escuro se estiver ativado no localStorage
     if (darkMode === 'enabled') {
         document.body.classList.add('dark-mode');
         button.classList.add('active');
     }
 
+    // Alterna o modo entre claro e escuro ao clicar no botão
     button.addEventListener('click', () => {
-        // Alternar a classe active no botão e dark-mode no body
         button.classList.toggle('active');
         document.body.classList.toggle('dark-mode');
         document.body.style.transition = '0.2s';
 
-        // Salvar a preferência no localStorage
+        // Salva a preferência do usuário no localStorage
         if (document.body.classList.contains('dark-mode')) {
             localStorage.setItem('dark-mode', 'enabled');
         } else {
@@ -40,17 +43,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-
-//Rolagem do slide
+// Rolagem do slide
 const slides = document.querySelectorAll('.img-intro img');
 const radioButtons = document.querySelectorAll('.radio-selector input[type="radio"]');
-let currentIndex = 0;
-let slideInterval;
-let lastIndex = 0;
+let currentIndex = 0; // Índice atual do slide
+let slideInterval; // Intervalo para a rolagem automática do slide
+let lastIndex = 0; // Último índice do slide exibido
 
+// Função para mostrar o slide com base no índice
 function showSlide(index, direction) {
     slides.forEach((slide, i) => {
-        slide.classList.remove('active', 'exit', 'enter'); 
+        slide.classList.remove('active', 'exit', 'enter');
         if (i === index) {
             slide.classList.add('active');
         } else if (i === (index - 1 + slides.length) % slides.length) {
@@ -62,18 +65,21 @@ function showSlide(index, direction) {
     radioButtons[index].checked = true;
 }
 
+// Função para mostrar o próximo slide
 function nextSlide() {
     lastIndex = currentIndex;
     currentIndex = (currentIndex + 1) % slides.length;
     showSlide(currentIndex, 'next');
 }
 
+// Função para mostrar o slide anterior
 function previousSlide() {
     lastIndex = currentIndex;
     currentIndex = (currentIndex - 1 + slides.length) % slides.length;
     showSlide(currentIndex, 'prev');
 }
 
+// Inicia o slideshow automaticamente
 function startSlideShow() {
     clearInterval(slideInterval);
     slideInterval = setInterval(nextSlide, 5000);
@@ -81,6 +87,7 @@ function startSlideShow() {
 
 startSlideShow();
 
+// Alterna o slide ao alterar o rádio
 radioButtons.forEach((radio, index) => {
     radio.addEventListener('change', () => {
         lastIndex = currentIndex;
@@ -90,40 +97,40 @@ radioButtons.forEach((radio, index) => {
     });
 });
 
-//Abrir modal
+// Abrir modal
 document.addEventListener('DOMContentLoaded', () => {
     const openModalButton = document.querySelector('.openModal');
     const closeModalButton = document.querySelector('.closeModal');
     const projectDialog = document.getElementById('projectDialog');
-    
+
     openModalButton.addEventListener('click', () => {
-        projectDialog.showModal();
-        
-        // Bloqueia o scroll do site
+        projectDialog.showModal(); // Abre o modal
+
+        // Impede rolagem do site ao abrir o modal
         document.body.classList.add('no-scroll');
     });
-    
+
     closeModalButton.addEventListener('click', () => {
-        projectDialog.close();
-        
-        // Libera o scroll do site
+        projectDialog.close(); // Fecha o modal
+
+        // Libera a rolagem do site
         document.body.classList.remove('no-scroll');
     });
 });
 
-
+// Rolagem suave ao clicar no botão "Voluntariar"
 document.addEventListener('DOMContentLoaded', () => {
     const button = document.querySelector('.voluntariar .button');
 
     button.addEventListener('click', function (event) {
-        event.preventDefault(); // Previne o comportamento padrão do link
+        event.preventDefault(); // Evita o comportamento padrão do link
 
-        const targetId = button.getAttribute('href'); // Pega o valor do href
+        const targetId = button.getAttribute('href'); // Obtém o valor do href
         const targetElement = document.querySelector(targetId); // Seleciona o elemento alvo
 
         if (targetElement) {
             targetElement.scrollIntoView({
-                behavior: 'smooth', // Efeito de rolagem suave
+                behavior: 'smooth', // Rolagem suave
                 block: 'start' // Alinha o topo do elemento no topo da janela
             });
         }
@@ -131,9 +138,9 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Perguntas Frequentes (FAQ)
-
 const faq = document.querySelectorAll('.faq button');
 
+// Função para alternar a visibilidade de uma resposta de FAQ
 function ativaFaq(event) {
     const faq = event.currentTarget;
     const controls = faq.getAttribute("aria-controls");
@@ -144,48 +151,44 @@ function ativaFaq(event) {
     faq.setAttribute("aria-expanded", ativa);
 }
 
+// Adiciona o evento de clique a cada botão FAQ
 function eventFaq(faq) {
     faq.addEventListener('click', ativaFaq);
 }
 
 faq.forEach(eventFaq);
 
-// Animação
+// Animação usando SimpleAnime, se estiver disponível
 if (window.SimpleAnime) {
     new SimpleAnime();
 }
 
+// Modal para doações
 document.addEventListener('DOMContentLoaded', () => {
     const openModalButton = document.querySelector('.openModalDoar');
     const closeModalButton = document.querySelector('.btn-close');
     const projectDialog = document.getElementById('modalDoar');
-    
-    // Verificar se os elementos existem antes de adicionar os event listeners
+
+    // Verifica se os elementos existem antes de adicionar os listeners
     if (openModalButton && projectDialog) {
         openModalButton.addEventListener('click', () => {
             projectDialog.showModal();
-            
-            // Bloqueia o scroll do site
-            document.body.classList.add('no-scroll');
+            document.body.classList.add('no-scroll'); // Impede rolagem do site
         });
     }
-    
+
     if (closeModalButton && projectDialog) {
         closeModalButton.addEventListener('click', () => {
             projectDialog.close();
-            
-            // Libera o scroll do site
-            document.body.classList.remove('no-scroll');
+            document.body.classList.remove('no-scroll'); // Libera a rolagem
         });
     }
 });
 
+// Funções de compartilhamento em redes sociais
+const pageUrl = encodeURIComponent(window.location.href); // URL da página atual
+const pageTitle = encodeURIComponent(document.title); // Título da página atual
 
-// Função para pegar a URL atual
-const pageUrl = encodeURIComponent(window.location.href);
-const pageTitle = encodeURIComponent(document.title);
-
-// Funções de compartilhamento
 function shareOnFacebook() {
     const facebookUrl = `https://www.facebook.com/sharer/sharer.php?u=${pageUrl}`;
     window.open(facebookUrl, '_blank', 'width=1000,height=1000');
@@ -206,10 +209,10 @@ function shareOnWhatsApp() {
     window.open(whatsappUrl, '_blank');
 }
 
+// Função para destacar texto ao pressionar Enter na pesquisa
 document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.getElementById('pesquisaInput');
 
-    // Adiciona um evento de escuta ao campo de entrada para detectar quando o usuário pressiona a tecla Enter
     searchInput.addEventListener('keypress', (event) => {
         if (event.key === 'Enter') {
             const searchTerm = searchInput.value.trim();
@@ -220,11 +223,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // Destaca o termo de pesquisa no texto da página
     function highlightTerm(term) {
-        // Remove o destaque existente
         removeHighlights();
 
-        // Encontra todos os nós de texto e aplica o destaque
         const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null, false);
         let node;
 
@@ -240,22 +242,19 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
 
-        // Rola até o primeiro destaque encontrado
         const highlighted = document.querySelector('.highlight');
         if (highlighted) {
             highlighted.scrollIntoView({ behavior: 'smooth', block: 'center' });
         }
 
-        // Limpa o campo de pesquisa
         searchInput.value = '';
     }
 
+    // Remove o destaque
     function removeHighlights() {
-        // Remove o destaque ao substituir os elementos de volta ao texto normal
         const highlights = document.querySelectorAll('.highlight');
         highlights.forEach((el) => {
-            el.outerHTML = el.innerText; // Substitui o <span> pelo texto
+            el.outerHTML = el.innerText;
         });
     }
 });
-

@@ -1,17 +1,16 @@
 .intro-sobre {
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: 1fr auto;
-    align-items: center;
+    margin-top: 50px; /* Adiciona uma margem superior de 50px à seção de introdução */
+    display: grid; /* Define a estrutura como grid */
+    grid-template-columns: 1fr auto; /* Cria duas colunas, a primeira com largura flexível e a segunda ajustada ao conteúdo */
+    align-items: center; /* Alinha verticalmente o conteúdo no centro da célula da grid */
 }
 
 .intro-sobre h1 {
-    font-size: 3rem;
-    color: #023047;
-    line-height: 1;
+    font-size: 3rem; /* Define o tamanho da fonte do título */
+    color: var(--cor-2-b); /* Define a cor do título com a variável --cor-2-b */
+    line-height: 1; /* Define o espaçamento entre linhas do título como 1, sem aumento de espaçamento */
 }
 
 .intro-sobre p {
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* Define o tamanho da fonte do parágrafo */
 }
-

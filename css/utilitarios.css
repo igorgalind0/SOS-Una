@@ -1,37 +1,36 @@
 .container {
-    box-sizing: border-box;
-    max-width: 1200px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-left: auto;
-    margin-right: auto;
+    box-sizing: border-box;  /* Define o modelo de box-sizing como border-box, incluindo padding e border no cálculo da largura */
+    max-width: 1200px;        /* Define a largura máxima do container em 1200px */
+    padding-left: 20px;       /* Define 20px de padding à esquerda */
+    padding-right: 20px;      /* Define 20px de padding à direita */
+    margin-left: auto;        /* Centraliza o container com margin automática à esquerda */
+    margin-right: auto;       /* Centraliza o container com margin automática à direita */
 }
 
 .laranja {
-    color: #FB8500;
+    color: var(--cor-1-b);    /* Aplica a cor laranja definida na variável --cor-1-b */
 }
 
 .azul {
-    color: #023047;
+    color: var(--cor-2-b);    /* Aplica a cor azul definida na variável --cor-2-b */
 }
 
 .negrito {
-    font-weight: bold;
+    font-weight: bold;        /* Define a fonte como negrito */
 }
 
 .button {
-    display: inline-block;
-    margin-top: 10px;
-    background-color: #FB8500; 
-    padding: 30px 100px;
-    font-size: 1.5rem;
-    border-radius: 8px;
-    font-weight: bold;
-    color: white !important;
-
-    transition: .2s;
+    display: inline-block;    /* Exibe o botão como um bloco inline, permitindo ajustes de margin */
+    margin-top: 10px;         /* Define um espaçamento superior de 10px */
+    background-color: var(--cor-1-b); /* Define a cor de fundo como laranja, de acordo com a variável */
+    padding: 30px 100px;      /* Define 30px de padding superior e inferior e 100px de padding lateral */
+    font-size: 1.5rem;        /* Define o tamanho da fonte como 1.5rem */
+    border-radius: 8px;       /* Define bordas arredondadas de 8px */
+    font-weight: bold;        /* Define o texto como negrito */
+    color: var(--cor-3-b) !important; /* Define a cor do texto como branco, com alta prioridade */
+    transition: .2s;           /* Aplica uma transição suave de 0.2 segundos para alterações de estilo */
 }
 
 .button:hover {
-    background-color: #023047;
+    background-color: #023047; /* Altera a cor de fundo para um azul escuro quando o botão é hover */
 }

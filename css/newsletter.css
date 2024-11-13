@@ -1,47 +1,48 @@
 .newsletter {
-    margin-top: 100px;
+    margin-top: 100px;                 /* Adiciona uma margem superior de 100px */
 }
+
 .newsletter-title {
-    font-size: 3rem;
-    color: #023047;
-    text-align: center;
+    font-size: 3rem;                   /* Define o tamanho da fonte como 3rem */
+    color: var(--cor-2-b);                    /* Define a cor do texto como #023047 */
+    text-align: center;                /* Centraliza o título */
 }
 
 .newsletter-text {
-    font-size: 1.5rem;
-    text-align: center;
-    margin: 0px 0px 20px 0px;
+    font-size: 1.5rem;                 /* Define o tamanho da fonte como 1.5rem */
+    text-align: center;                /* Centraliza o texto */
+    margin: 0px 0px 20px 0px;          /* Define as margens do elemento */
 }
 
 .newsletter form div {
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 50px;
+    margin-top: 20px;                  /* Adiciona uma margem superior de 20px */
+    display: flex;                     /* Utiliza o modelo de layout flexbox */
+    align-items: center;               /* Alinha os itens ao centro no eixo transversal */
+    justify-content: space-between;    /* Distribui os itens igualmente ao longo do eixo principal */
+    gap: 50px;                         /* Define um espaço de 50px entre os itens */
 }
 
 .newsletter-label {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #023047;
-    margin-top: 20px;
+    font-size: 2rem;                   /* Define o tamanho da fonte como 2rem */
+    font-weight: bold;                 /* Define o peso da fonte como bold */
+    color: var(--cor-2-b);             /* Define a cor do texto como a cor da variável --cor-2-b */
+    margin-top: 20px;                  /* Adiciona uma margem superior de 20px */
 }
 
 .newsletter input {
-    width: 100%;
-    max-width: 700px;
-    padding: 30px;
-    font-size: 1.5rem;
-    border-radius: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    background: #f1f1f1;
+    width: 100%;                       /* Define a largura do input como 100% do seu contêiner */
+    max-width: 700px;                  /* Define a largura máxima do input como 700px */
+    padding: 30px;                     /* Define o padding interno do input */
+    font-size: 1.5rem;                 /* Define o tamanho da fonte como 1.5rem */
+    border-radius: 10px;               /* Define um raio de borda de 10px para cantos arredondados */
+    border: 1px solid rgba(0, 0, 0, 0.5); /* Define uma borda de 1px com cor preta e opacidade de 50% */
+    background: #f1f1f1;               /* Define o fundo do input como uma cor cinza claro */
 }
 
 .newsletter button {
-    margin: 0;
+    margin: 0;                         /* Remove qualquer margem do botão */
 }
 
 .dark-mode .newsletter-label {
-    color: white;
+    color: var(--cor-3-b);                      /* No modo escuro, a cor do texto das labels é alterada para branco */
 }

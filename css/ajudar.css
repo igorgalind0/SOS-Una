@@ -1,59 +1,54 @@
 .ajudar {
-    margin-top: 100px;
+    margin-top: 100px; /* Adiciona uma margem superior de 100px ao elemento com a classe .ajudar */
 }
 
 .ajudar-title {
-    font-size: 3rem;
-    text-align: center;
-    color: #023047;
+    font-size: 3rem; /* Define o tamanho da fonte como 3rem */
+    text-align: center; /* Centraliza o texto */
+    color: var(--cor-2-b); /* Define a cor do texto usando a variável --cor-2-b */
 }
 
 .ajudar-texto {
-    font-size: 1.5rem;
-    text-align: center;
+    font-size: 1.5rem; /* Define o tamanho da fonte como 1.5rem */
+    text-align: center; /* Centraliza o texto */
 }
 
 .ajuda {
-    margin-top: 50px;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    gap: 40px;
-    color: #1e1e1e !important;
-    font-weight: 500;
+    margin-top: 50px; /* Adiciona uma margem superior de 50px ao elemento com a classe .ajuda */
+    display: flex; /* Usa o modelo flexbox para distribuir os itens */
+    text-align: center; /* Centraliza o texto dentro dos itens */
+    justify-content: center; /* Centraliza os itens ao longo do eixo principal */
+    gap: 40px; /* Adiciona um espaço de 40px entre os itens */
+    color: #1e1e1e !important; /* Define a cor do texto como #1e1e1e e usa !important para garantir que essa regra seja aplicada */
+    font-weight: 500; /* Define o peso da fonte para 500 */
 }
 
 .ajuda li {
-    width: 500px;
-    background: #f1f1f1;
-    padding: 40px;
-    border-radius: 8px;
-    font-size: 1.5rem;
+    width: 500px; /* Define a largura de cada item da lista como 500px */
+    background: #f1f1f1; /* Define a cor de fundo dos itens como #f1f1f1 */
+    padding: 40px; /* Adiciona 40px de preenchimento ao redor do conteúdo */
+    border-radius: 8px; /* Adiciona bordas arredondadas de 8px */
+    font-size: 1.5rem; /* Define o tamanho da fonte para 1.5rem */
 }
 
-.ajuda li h1{
-    position: relative;
-    display: inline-block;
-    color: #023047;
+.ajuda li h1 {
+    position: relative; /* Define a posição do título como relativa para poder aplicar o ::before */
+    display: inline-block; /* Faz com que o título se comporte como um bloco inline */
+    color: var(--cor-2-b); /* Define a cor do texto usando a variável --cor-2-b */
 }
 
 .ajuda li p {
-    color: #023047;
+    color: var(--cor-2-b); /* Define a cor do texto do parágrafo usando a variável --cor-2-b */
 }
 
-.ajuda li h1::before{
-    content: '';
-    width: 40px;
-    height: 5px;
-    background: #FB8500;
-    position: absolute;
+.ajuda li h1::before {
+    content: ''; /* Cria um pseudo-elemento antes do conteúdo do título */
+    width: 40px; /* Define a largura do pseudo-elemento */
+    height: 5px; /* Define a altura do pseudo-elemento */
+    background: var(--cor-1-b); /* Define a cor de fundo do pseudo-elemento usando a variável --cor-1-b */
+    position: absolute; /* Posiciona o pseudo-elemento de forma absoluta em relação ao h1 */
 }
 
 .ajuda .button {
-    padding: 30px 100px;
-}
-
-.dark-mode .ajuda li h1,
-.dark-mode .ajuda li p {
-    color: #023047;
+    padding: 30px 100px; /* Define o preenchimento da classe .button como 30px em cima e embaixo e 100px à esquerda e à direita */
 }

@@ -1,25 +1,25 @@
 .fadeInDown {
-    transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0); /* Move o elemento 20px para cima (em relação ao eixo Y) */
 }
 
 .fadeInUp {
-    transform: translate3d(0, 20px, 0);
+    transform: translate3d(0, 20px, 0); /* Move o elemento 20px para baixo (em relação ao eixo Y) */
 }
 
 .fadeInRight {
-    transform: translate3d(20px, 0, 0);
+    transform: translate3d(20px, 0, 0); /* Move o elemento 20px para a direita (em relação ao eixo X) */
 }
 
 .fadeInLeft {
-    transform: translate3d(-20, 0, 0);
+    transform: translate3d(-20px, 0, 0); /* Move o elemento 20px para a esquerda (em relação ao eixo X) */
 }
 
 [data-anime] {
-    opacity: 0;
+    opacity: 0; /* Inicialmente, o elemento com o atributo [data-anime] tem opacidade 0 (invisível) */
 }
 
 .anime {
-    opacity: 1;
-    transform: none;
-    transition: transform 0.8s, opacity 0.8s;
+    opacity: 1; /* Quando a classe .anime é aplicada, o elemento fica visível (opacidade 1) */
+    transform: none; /* Reseta qualquer transformação aplicada anteriormente, retornando o elemento ao seu estado original */
+    transition: transform 0.8s, opacity 0.8s; /* Define a transição suave para as propriedades de transformação e opacidade com duração de 0.8s */
 }

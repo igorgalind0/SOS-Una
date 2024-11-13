@@ -1,33 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); /* Importar fonte do google fonts */
 
-@import url("./css/global.css");
-@import url("./css/utilitarios.css");
-@import url("./css/header.css");
-@import url("./css/main.css");
-@import url("./css/ods.css");
-@import url("./css/sobre.css");
-@import url("./css/ajudar.css");
-@import url("./css/parceiros.css");
-@import url("./css/local.css");
-@import url("./css/dark-mode.css");
-@import url("./css/variaveis.css");
-@import url("./css/newsletter.css");
-@import url("./css/footer.css");
-@import url("./css/animacao.css");
+@import url("./css/global.css"); /*Importar arquivo global*/
+@import url("./css/utilitarios.css"); /*Importar arquivo utilitarios*/
+@import url("./css/header.css"); /*Importar arquivo header*/
+@import url("./css/main.css"); /*Importar arquivo main*/
+@import url("./css/ods.css"); /*Importar arquivo ods*/
+@import url("./css/sobre.css"); /*Importar arquivo sobre*/
+@import url("./css/ajudar.css"); /*Importar arquivo ajudar*/
+@import url("./css/parceiros.css"); /*Importar arquivo parceiros*/
+@import url("./css/local.css"); /*Importar arquivo local*/
+@import url("./css/dark-mode.css"); /*Importar arquivo dark-mode*/
+@import url("./css/variaveis.css"); /*Importar arquivo variaveis*/
+@import url("./css/newsletter.css"); /*Importar arquivo newsletter*/
+@import url("./css/footer.css"); /*Importar arquivo footer*/
+@import url("./css/animacao.css"); /*Importar arquivo animacao*/
 
-@import url("./css/sobre/intro-sobre.css");
-@import url("./css/sobre/objetivos.css");
-@import url("./css/sobre/historia.css");
-@import url("./css/sobre/valores.css");
+@import url("./css/sobre/intro-sobre.css"); /*Importar arquivo intro-sobre*/
+@import url("./css/sobre/objetivos.css"); /*Importar arquivo objetivos*/
+@import url("./css/sobre/historia.css"); /*Importar arquivo historia*/
+@import url("./css/sobre/valores.css"); /*Importar arquivo valores*/
 
-@import url("./css/voluntarios/voluntario.css");
-@import url("./css/voluntarios/voluntariar.css");
-@import url("./css/voluntarios/atividades.css");
-@import url("./css/voluntarios/form-voluntarios.css");
-@import url("./css/voluntarios/faq-voluntarios.css");
+@import url("./css/voluntarios/voluntario.css"); /*Importar arquivo voluntario*/
+@import url("./css/voluntarios/voluntariar.css"); /*Importar arquivo voluntariar*/
+@import url("./css/voluntarios/atividades.css"); /*Importar arquivo atividades*/
+@import url("./css/voluntarios/form-voluntarios.css"); /*Importar arquivo form-voluntarios*/
+@import url("./css/voluntarios/faq-voluntarios.css"); /*Importar arquivo faq-voluntarios*/
 
-@import url("./css/doar/doar-main.css");
-@import url("./css/doar/depoimentos.css");
+@import url("./css/doar/doar-main.css"); /*Importar arquivo doar-main*/
+@import url("./css/doar/depoimentos.css"); /*Importar arquivo depoimentos*/
 
-@import url("./css/artigo/artigos-main.css");
-@import url("./css/artigo/artigo.css");
+@import url("./css/artigo/artigos-main.css"); /*Importar arquivo artigos-main*/
+@import url("./css/artigo/artigo.css"); /*Importar arquivo artigo*/
