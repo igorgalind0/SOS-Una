@@ -67,3 +67,13 @@
 .share-buttons a:hover {
     background-color: var(--cor-2-b);
 }
+
+body.dark-mode .artigo-ods h2,
+body.dark-mode .artigo-ods h1,
+body.dark-mode .artigo-ods h3 {
+    color: var(--cor-3-b);
+}
+
+body.dark-mode .share-buttons a:hover {
+    color: var(--cor-3-b);
+}

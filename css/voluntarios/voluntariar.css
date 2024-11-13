@@ -46,3 +46,25 @@
     justify-content: center;
 
 }
+
+.dark-mode .voluntarios-itens h1,
+.dark-mode .voluntarios-itens p {
+    color: var(--cor-2-b);
+}
+
+body.dark-mode .voluntariar-passos h1,
+body.dark-mode .voluntariar-passos p {
+    color: var(--cor-2-b);
+}
+
+body.dark-mode #formulario-voluntarios label {
+    color: var(--cor-3-b);
+}
+
+body.dark-mode .faq dl > div:nth-child(even) button{
+    color: var(--cor-3-b);
+}
+
+body.dark-mode .faq dl > div:nth-child(odd) dd {
+    color: var(--cor-2-b);
+}

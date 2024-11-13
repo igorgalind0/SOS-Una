@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    const button = document.querySelector('.button');
+    const button = document.querySelector('.voluntariar .button');
 
     button.addEventListener('click', function (event) {
         event.preventDefault(); // Previne o comportamento padrão do link

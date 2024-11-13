@@ -74,3 +74,15 @@
 .modal-content p {
     margin: 5px !important;
 }
+
+body.dark-mode .doar h1,
+body.dark-mode #modalDoar h1,
+body.dark-mode #modalDoar strong {
+    color: var(--cor-3-b);
+}
+
+body.dark-mode .doar-destino li,
+body.dark-mode .depoimentos li > p,
+body.dark-mode .depoimentos h2 {
+    color: var(--cor-2-b);
+}
