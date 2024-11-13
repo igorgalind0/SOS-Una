@@ -9,6 +9,7 @@
 </head>
 <body>
     
+    <!--Menu do site-->
     <header class="header container">
 
         <div>
@@ -23,6 +24,7 @@
         </div>
         <div class="menu">
             <nav aria-label="primária">
+                <!--Navegação entre as páginas do site-->
                 <ul class="header-menu">
                     <li><a href="./sobre.html">Sobre nós</a></li>
                     <li><a href="./voluntarios.html">Voluntários</a></li>
@@ -31,6 +33,7 @@
                 </ul>
             </nav>
 
+            <!--Pesquisar palavra chave da página-->
             <div class="pesquisa">
                 <label for="pesquisaInput">
                     <span class="lupa">
@@ -40,6 +43,7 @@
                 <input type="text" id="pesquisaInput" placeholder="Pesquisar">
             </div>
 
+            <!--Botão para alternar entre modo claro e escuro-->
             <button class="button-mode">
                 <span class="toggle-ball">
                     <img src="img/dia.svg" class="icon-sun" alt="Ícone do Sol">
@@ -49,12 +53,14 @@
         </div>    
     </header>
 
+    <!--Artigo sobre a ODS específica-->
     <article class="artigo-ods container" id="shareText">
 
         <h2>ODS 14: Vida na água</h2>
 
         <div class="share-container">
             <h3>Compartilhe este conteúdo:</p>
+            <!--Botões para compartilhamento do conteúdo da página-->
             <div class="share-buttons">
                 <button onclick="shareOnFacebook()">Facebook</button>
                 <button onclick="shareOnTwitter()">Twitter</button>
@@ -92,6 +98,7 @@
             A meta 14.7 do ODS 14 destaca o potencial dos recursos aquáticos para o desenvolvimento econômico sustentável. No contexto do Rio Una, essa meta poderia incentivar o desenvolvimento de atividades econômicas alternativas, como o ecoturismo, que valoriza o patrimônio natural e cultural sem prejudicar o ambiente. A promoção de práticas como trilhas ecológicas, observação de fauna e flora e turismo cultural geraria renda adicional para as comunidades, diversificando a economia local de maneira ecologicamente responsável.
         </p>
 
+        <!--Vídeo do youtube sobre a ODS específica-->
         <div class="video">
             <iframe src="https://www.youtube.com/embed/-Qy6HtE0GZU?si=5dGzGgPRanVGl-Wz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
@@ -102,6 +109,7 @@
 
     </article>
 
+    <!--Rodapé do site-->
     <footer class="footer-bg">
         <div class="footer container">
             <div class="footer-img">
@@ -110,6 +118,7 @@
             <div class="footer-itens">
                 <div class="footer-social">
                     <h1>Redes sociais</h1>
+                    <!--Redes sociais do SOS UNA-->
                     <ul class="social-lista">
                         <li>
                             <img src="./img/social/instagram.svg" alt="">
@@ -126,6 +135,7 @@
                     </ul>
                 </div>
                 
+                <!--Navegar entre as páginas do site pelo -->
                 <div class="footer-paginas">
                     <h1>Páginas</h1>
                     <ul>
@@ -139,7 +149,7 @@
         </div>
     </footer>
 
+    <!--Script-->
     <script src="./js/script.js" defer></script>
-    <script src="./js/simple-anime.js"></script>
 </body>
 </html>

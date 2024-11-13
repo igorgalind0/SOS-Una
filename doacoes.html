@@ -9,6 +9,7 @@
 </head>
 <body>
     
+    <!--Menu do site-->
     <header class="header container">
 
         <div>
@@ -25,6 +26,7 @@
         <div class="menu">
             <nav aria-label="primária">
                 <ul class="header-menu">
+                    <!--Páginas para navegar-->
                     <li><a href="./sobre.html">Sobre nós</a></li>
                     <li><a href="./voluntarios.html">Voluntários</a></li>
                     <li><a href="./doacoes.html">Doações</a></li>
@@ -32,6 +34,7 @@
                 </ul>
             </nav>
 
+            <!--Pesquisa do site-->
             <div class="pesquisa">
                 <label for="pesquisaInput">
                     <span class="lupa">
@@ -41,6 +44,7 @@
                 <input type="text" id="pesquisaInput" placeholder="Pesquisar">
             </div>
 
+            <!--Botão para alternar entre modo claro e escuro do site-->
             <button class="button-mode">
                 <span class="toggle-ball">
                     <img src="img/dia.svg" class="icon-sun" alt="Ícone do Sol">
@@ -50,6 +54,7 @@
         </div>
     </header>
 
+    <!--Seção de doações do site-->
     <main class="doacoes container">
         <div class="doar">
             <div>
@@ -62,7 +67,8 @@
             <div>
                 <img src="./img/doacoes/doar.jpg" alt="">
             </div>
-
+            
+            <!--Modal para abrir QR Code e número da conta de doação-->
             <dialog id="modalDoar">
                 <h1>Faça <span class="laranja">uma doação!</span></h1>
                 <div class="modal-content">
@@ -77,6 +83,7 @@
             </dialog>
         </div>
 
+        <!--Os destinos para onde irão as doações-->
         <div class="doar-destino">
             <h1>Qual o <span class="laranja">destino das doações?</span></h1>
 
@@ -88,6 +95,7 @@
         </div>
     </main>
 
+    <!--Depoimentos de quem doaram-->
     <section class="depoimentos container">
         <h1>Depoimentos de <span class="laranja">Donatários</span></h1>
         <p>Veja um pouco dos depoimentos dos <span class="negrito azul">nossos doadores e voluntários!</span></p>
@@ -105,6 +113,7 @@
         </ul>
     </section>
 
+    <!--Parceiros do SOS UNA-->
     <section class="parceiros container" aria-label="Nossos Parceiros">
         <h2 class="container">Nossos <span class="laranja">parceiros. </span></h2>
 
@@ -120,6 +129,7 @@
         </ul>
     </section>
 
+    <!--Newsletter para receber novidades do SOS Una-->
     <section class="newsletter container">
         <div class="newsletter-conteudo">
             <h1 class="newsletter-title">Nossa <span class="laranja">Newsletter!</span></h1>
@@ -136,12 +146,14 @@
         </form>
     </section>
 
+     <!--Rodapé da página-->
     <footer class="footer-bg">
         <div class="footer container">
             <div class="footer-img">
                 <a href="./index.html"><img src="./logorodape.svg" alt=""></a>
             </div>
             <div class="footer-itens">
+                <!--Links para redes sociais-->
                 <div class="footer-social">
                     <h1>Redes sociais</h1>
                     <ul class="social-lista">
@@ -160,6 +172,7 @@
                     </ul>
                 </div>
                 
+                <!--Navegação entre páginas pelo rodapé-->
                 <div class="footer-paginas">
                     <h1>Páginas</h1>
                     <ul>
@@ -173,6 +186,7 @@
         </div>
     </footer>
 
+    <!--Script-->
     <script src="./js/script.js" defer></script>
 </body>
 </html>
