@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./img/flat-icon.svg" type="image/x-icon">
-    <title>Home - Rio Una</title>
+    <title>Artigos - Rio Una</title>
 </head>
 <body>
     
@@ -46,170 +46,61 @@
                     <img src="img/noite.svg" class="icon-moon" alt="Ícone da Lua">
                 </span>
             </button>
-        </div>
+        </div>    
     </header>
 
-    <main class="introducao container">
-        <div class="intro-conteudo">
-            <h1 class="intro-title fadeInDown" data-anime="200">
-                Junte-se a nós na luta pela <span class="laranja">despoluição do Rio Una!</span>
-            </h1>
-            <p class="intro-text fadeInDown" data-anime="400">
-                O Rio Una é essencial para nossa biodiversidade e nossa comunidade. Com sua saúde ameaçada pela poluição, <span class="negrito azul">precisamos agir juntos para preservá-lo. Participe desta causa e faça a diferença!</span>
-            </p>
+    <article class="artigo-ods container" id="shareText">
 
-            <a class="button openModal fadeInDown" data-anime="600" href="#">Participe do projeto!</a>
+        <h2>ODS 14: Vida na água</h2>
 
-            <dialog id="projectDialog">
-                <form action="./php/process.php" method="POST">
-                    <h2>Participe do Projeto</h2>
-                
-                    <label for="firstName">Nome:</label>
-                    <input type="text" id="firstName" name="nome" required>
-                
-                    <label for="lastName">Sobrenome:</label>
-                    <input type="text" id="lastName" name="sobrenome" required>
-                
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                
-                    <label for="contributionArea">Qual área quer contribuir:</label>
-                    <select id="contributionArea" name="contribuicao" required>
-                        <option value="" disabled selected>Selecione uma área</option>
-                        <option value="saude">Saúde</option>
-                        <option value="limpeza">Limpeza</option>
-                        <option value="reciclagem">Reciclagem</option>
-                        <option value="habitacao">Habitação</option>
-                        <option value="outros">Outros</option>
-                    </select>
-                
-                    <label for="city">Cidade:</label>
-                    <input type="text" id="city" name="cidade" required>
-                
-                    <label for="phone">Número de Telefone:</label>
-                    <input type="tel" id="phone" name="telefone" placeholder="(xx) xxxxx-xxxx">
-                
-                    <label for="comments">Comentários:</label>
-                    <textarea id="comments" name="comentarios" rows="4" placeholder="Deixe seus comentários aqui..."></textarea>
-                    
-                    <div class="buttons">
-                        <button type="submit">Enviar</button>
-                        <button type="button" class="closeModal">Fechar</button>
-                    </div>
-                </form>
-                
-            </dialog>
-
-        </div>
-        <div class="slide fadeInDown" data-anime="800">
-            <div class="img-intro">
-                <img src="./img/RioUna.JPG" alt="Rio Una" class="slide active">
-                <img src="./img/Una.JPG" alt="Rio Una" class="slide enter">
-            </div>
-            <div class="radio-selector">
-                <input type="radio" id="slide1" name="slide" value="0" checked>
-                <label for="slide1"></label>
-                <input type="radio" id="slide2" name="slide" value="1">
-                <label for="slide2"></label>
+        <div class="share-container">
+            <h3>Compartilhe este conteúdo:</p>
+            <div class="share-buttons">
+                <button onclick="shareOnFacebook()">Facebook</button>
+                <button onclick="shareOnTwitter()">Twitter</button>
+                <button onclick="shareOnLinkedIn()">LinkedIn</button>
+                <button onclick="shareOnWhatsApp()">WhatsApp</button>
+                <a href="./pdf/ODS6.pdf" download="Artigo-ODS6.pdf">Baixar</a>
             </div>
         </div>
-    </main>
+        
+        <h1>COMO AS ODS PODEM <span class="laranja">AJUDAR O RIO UNA?</span> </h1>
+        <h2>“Integrando SOCIEDADE, SUSTENTABILIDADE e UNA.”</h2>
 
-    <section class="ods-itens container fadeInDown" data-anime="600">
-        <div class="ods">
-            <a href="./artigo-ods-6.html"><img src="./img/ODS-6.svg" alt=""></a>
-        </div>
-        <div class="ods">
-            <a href="./artigo-ods-14.html"><img src="./img/ODS-14.svg" alt=""></a>
-        </div>
-    </section>
-    
-    <section class="sobre container">
-        <div class="sobre-img">
-            <img src="./img/SOS.svg" alt="SOS Rio Una">
-        </div>
+        <h2>Redução da Poluição Aquática (Meta 14.1)</h2>
+        <p>
+            A meta 14.1 visa prevenir e reduzir a poluição de todos os tipos nos ecossistemas aquáticos, incluindo rios e áreas costeiras. No contexto do Rio Una, a redução do despejo de resíduos agrícolas, industriais e domésticos no rio ajudaria a conservar a qualidade da água, beneficiando a biodiversidade e as comunidades locais. Medidas como a adoção de sistemas de tratamento de resíduos e o incentivo ao manejo adequado de fertilizantes e pesticidas poderiam diminuir significativamente a poluição. Isso protegeria tanto a vida aquática quanto a saúde das pessoas que dependem diretamente do rio, promovendo um uso mais sustentável dos recursos hídricos.
+        </p>
 
-        <div class="sobre-conteudo">
-            <h1 class="sobre-title">O que é o <span class="laranja">SOS Rio Una?</span></h1>
+        <h2>Conservação da Biodiversidade Aquática (Meta 14.2)</h2>
+        <p>
+            A proteção dos ecossistemas aquáticos e da biodiversidade é essencial para a saúde do Rio Una. A meta 14.2 do ODS 14, que visa proteger e restaurar ecossistemas marinhos e costeiros, pode ser adaptada para a proteção da biodiversidade de rios e bacias hidrográficas. A restauração de áreas de vegetação ciliar ao longo das margens do Rio Una ajudaria a reduzir o escoamento de sedimentos e poluentes, protegendo a vida aquática e garantindo um ambiente mais equilibrado. Isso é crucial para a sustentação de atividades como a pesca e a agricultura, que dependem de um ecossistema saudável.
+        </p>
 
-            <p class="sobre-text">
-                O SOS Rio Una é um projeto dedicado à preservação do nosso rio, <span class="negrito azul">promovendo a conscientização sobre a importância da água limpa e saudável.</span>
-            </p>
+        <h2>Promoção de Pesca Sustentável e Controle de Práticas Predatórias (Meta 14.4)</h2>
+        <p>
+            Embora a pesca no Rio Una seja geralmente de pequena escala, a meta 14.4, que promove a regulamentação da pesca para evitar a sobre-exploração, pode ser relevante para garantir a sustentabilidade dos recursos pesqueiros. A regulamentação e o controle de práticas de pesca predatórias ajudariam a preservar as espécies locais, garantindo que a pesca continue a ser uma fonte de alimento e renda para as comunidades, sem comprometer a regeneração natural das populações aquáticas.
+        </p>
 
-            <a class="button" href="#">Saiba mais sobre</a>
-        </div>
-    </section>
+        <h2>Educação e Conscientização Ambiental (Meta 14.a)</h2>
+        <p>
+            A meta 14.a enfatiza a importância da pesquisa científica e da educação para a preservação dos recursos aquáticos. Aplicada ao Rio Una, essa meta poderia envolver programas de conscientização para as comunidades locais sobre a importância de práticas sustentáveis e de conservação. A educação ambiental, especialmente sobre os impactos da poluição e da degradação dos ecossistemas, incentivaria uma gestão mais responsável e o engajamento comunitário na proteção do rio, fortalecendo o compromisso coletivo com a sustentabilidade.
+        </p>
 
-    <section class="ajudar container">
-        <div class="ajudar-conteudo">
-            <h1 class="ajudar-title azul">Como você<span class="laranja"> pode ajudar?</span></h1>
-            <p class="ajudar-texto">Sua ajuda é fundamental! Você pode se juntar a nós como <span class="negrito azul">voluntário em nossos eventos de limpeza ou fazer uma doação para apoiar nossas atividades.</span> </p>
+        <h2>Valorização Econômica Sustentável (Meta 14.7)</h2>
+        <p>
+            A meta 14.7 do ODS 14 destaca o potencial dos recursos aquáticos para o desenvolvimento econômico sustentável. No contexto do Rio Una, essa meta poderia incentivar o desenvolvimento de atividades econômicas alternativas, como o ecoturismo, que valoriza o patrimônio natural e cultural sem prejudicar o ambiente. A promoção de práticas como trilhas ecológicas, observação de fauna e flora e turismo cultural geraria renda adicional para as comunidades, diversificando a economia local de maneira ecologicamente responsável.
+        </p>
 
-            <ul class="ajuda">
-                <li>
-                    <h1>Seja voluntário!</h1>
-                    <p>Seja um voluntário e ajude nossa causa. Sua participação é fundamental para <span class="negrito">transformar o Rio Una e contribuir para a conscientização sobre a importância da preservação ambiental.</span></p>
-
-                    <a class="button" href="#">Saiba mais</a>
-                </li>
-
-                <li>
-                    <h1>Faça doações!</h1>
-                    <p>Faça doações para apoiar nossas atividades e ajudar na despoluição do Rio Una. Cada contribuição, por menor que seja, <span class="negrito">faz uma grande diferença na preservação deste recurso vital para nossa comunidade.</span></p>
-
-                    <a class="button" href="#">Saiba mais</a>
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="parceiros container" aria-label="Nossos Parceiros">
-        <h2 class="container">Nossos <span class="laranja">parceiros. </span></h2>
-
-        <ul>
-            <li><img src="./img/logos/amazon.svg" alt=""></li>
-            <li><img src="./img/logos/apple.svg" alt=""></li>
-            <li><img src="./img/logos/jbl.svg" alt=""></li>
-            <li><img src="./img/logos/samsung.svg" alt=""></li>
-            <li><img src="./img/logos/paypal.svg" alt=""></li>
-            <li><img src="./img/logos/tesla.svg" alt=""></li>
-            <li><img src="./img/logos/nubank.svg" alt=""></li>
-            <li><img src="./img/logos/steam.svg" alt=""></li>
-        </ul>
-    </section>
-
-    <section class="local container">
-        <div class="local-conteudo">
-            <h1 class="local-title">Nossa <span class="laranja">localização.</span></h1>
-
-            <p class="local-text">
-                O Rio Una atravessa diversas áreas de Pernambuco, incluindo Caruaru, onde sustenta comunidades e uma rica biodiversidade.  
-                <span class="negrito azul">Preservá-lo é essencial para a qualidade de vida e o equilíbrio ambiental da região.</span>
-            </p>
-
-            <a class="button" href="https://maps.app.goo.gl/rSWh8XExL83Apdhs9" target="_blank">Ver no Mapa </a>
+        <div class="video">
+            <iframe src="https://www.youtube.com/embed/-Qy6HtE0GZU?si=5dGzGgPRanVGl-Wz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
 
-        <div class="local">
-            <iframe class="local-mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d504876.8889534844!2d-36.251731186721344!3d-8.658146870563877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7aa09663a55cad1%3A0x2b0a671e377e92c5!2sRio%20Una!5e0!3m2!1spt-BR!2sbr!4v1730126268173!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-    </section>
+        <p>
+            O Rio Una sustenta uma variedade significativa de vida animal que depende diretamente de seus recursos hídricos e ecossistemas adjacentes. Entre as espécies aquáticas, destacam-se peixes como o tucunaré e a traíra, que são importantes tanto para o equilíbrio do ecossistema quanto para a pesca local de subsistência. A fauna ribeirinha inclui diversas aves aquáticas, como garças e martins-pescadores, que utilizam o rio como fonte de alimentação e nidificação. Além disso, mamíferos como a capivara e o pequeno cágado-do-Una (um tipo de tartaruga endêmica da região) encontram no rio um habitat essencial. Essas espécies dependem da qualidade e da estabilidade dos recursos naturais do Rio Una para sua sobrevivência, sendo diretamente afetadas por fatores como poluição, desmatamento e atividades agrícolas intensivas.
+        </p>
 
-    <section class="newsletter container">
-        <div class="newsletter-conteudo">
-            <h1 class="newsletter-title">Nossa <span class="laranja">Newsletter!</span></h1>
-            <p class="newsletter-text">
-                Acompanhe novidades e <span class="negrito azul">progresso do SOS UNA através do e-mail.</span> 
-            </p>
-        </div>
-        <form action="GET">
-            <label for="email" class="newsletter-label">Seu e-mail:</label>
-            <div>
-                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
-                <button class="button" type="submit">Inscrever-se</button>
-            </div>
-        </form>
-    </section>
+    </article>
 
     <footer class="footer-bg">
         <div class="footer container">

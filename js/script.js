@@ -12,15 +12,26 @@ function ativarLink(link) {
 
 links.forEach(ativarLink);
 
-//Ativar botão Dark/Light Mode
+// Ativar botão Dark/Light Mode
 document.addEventListener('DOMContentLoaded', () => {
     const button = document.querySelector('.button-mode');
     
+    // Verificar se o modo escuro está ativado na localStorage
+    const darkMode = localStorage.getItem('dark-mode');
+    
+    // Se estiver ativado, aplicar o modo escuro
+    if (darkMode === 'enabled') {
+        document.body.classList.add('dark-mode');
+        button.classList.add('active');
+    }
+
     button.addEventListener('click', () => {
+        // Alternar a classe active no botão e dark-mode no body
         button.classList.toggle('active');
         document.body.classList.toggle('dark-mode');
         document.body.style.transition = '0.2s';
 
+        // Salvar a preferência no localStorage
         if (document.body.classList.contains('dark-mode')) {
             localStorage.setItem('dark-mode', 'enabled');
         } else {
@@ -28,6 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
 
 //Rolagem do slide
 const slides = document.querySelectorAll('.img-intro img');
@@ -85,14 +97,20 @@ document.addEventListener('DOMContentLoaded', () => {
     const projectDialog = document.getElementById('projectDialog');
     
     openModalButton.addEventListener('click', () => {
-        
         projectDialog.showModal();
+        
+        // Bloqueia o scroll do site
+        document.body.classList.add('no-scroll');
     });
     
     closeModalButton.addEventListener('click', () => {
         projectDialog.close();
+        
+        // Libera o scroll do site
+        document.body.classList.remove('no-scroll');
     });
 });
+
 
 document.addEventListener('DOMContentLoaded', () => {
     const button = document.querySelector('.button');
@@ -142,12 +160,102 @@ document.addEventListener('DOMContentLoaded', () => {
     const closeModalButton = document.querySelector('.btn-close');
     const projectDialog = document.getElementById('modalDoar');
     
-    openModalButton.addEventListener('click', () => {
-        
-        projectDialog.showModal();
-    });
+    // Verificar se os elementos existem antes de adicionar os event listeners
+    if (openModalButton && projectDialog) {
+        openModalButton.addEventListener('click', () => {
+            projectDialog.showModal();
+            
+            // Bloqueia o scroll do site
+            document.body.classList.add('no-scroll');
+        });
+    }
     
-    closeModalButton.addEventListener('click', () => {
-        projectDialog.close();
-    });
+    if (closeModalButton && projectDialog) {
+        closeModalButton.addEventListener('click', () => {
+            projectDialog.close();
+            
+            // Libera o scroll do site
+            document.body.classList.remove('no-scroll');
+        });
+    }
 });
+
+
+// Função para pegar a URL atual
+const pageUrl = encodeURIComponent(window.location.href);
+const pageTitle = encodeURIComponent(document.title);
+
+// Funções de compartilhamento
+function shareOnFacebook() {
+    const facebookUrl = `https://www.facebook.com/sharer/sharer.php?u=${pageUrl}`;
+    window.open(facebookUrl, '_blank', 'width=1000,height=1000');
+}
+
+function shareOnTwitter() {
+    const twitterUrl = `https://twitter.com/intent/tweet?url=${pageUrl}&text=${pageTitle}`;
+    window.open(twitterUrl, '_blank', 'width=1000,height=1000');
+}
+
+function shareOnLinkedIn() {
+    const linkedInUrl = `https://www.linkedin.com/shareArticle?mini=true&url=${pageUrl}&title=${pageTitle}`;
+    window.open(linkedInUrl, '_blank', 'width=1000,height=1000');
+}
+
+function shareOnWhatsApp() {
+    const whatsappUrl = `https://api.whatsapp.com/send?text=${pageTitle} - ${pageUrl}`;
+    window.open(whatsappUrl, '_blank');
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const searchInput = document.getElementById('pesquisaInput');
+
+    // Adiciona um evento de escuta ao campo de entrada para detectar quando o usuário pressiona a tecla Enter
+    searchInput.addEventListener('keypress', (event) => {
+        if (event.key === 'Enter') {
+            const searchTerm = searchInput.value.trim();
+
+            if (searchTerm) {
+                highlightTerm(searchTerm);
+            }
+        }
+    });
+
+    function highlightTerm(term) {
+        // Remove o destaque existente
+        removeHighlights();
+
+        // Encontra todos os nós de texto e aplica o destaque
+        const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null, false);
+        let node;
+
+        while (node = walker.nextNode()) {
+            const regex = new RegExp(`(${term})`, 'gi');
+            const parent = node.parentNode;
+
+            if (regex.test(node.nodeValue)) {
+                const newHTML = node.nodeValue.replace(regex, `<span class="highlight">$1</span>`);
+                const span = document.createElement('span');
+                span.innerHTML = newHTML;
+                parent.replaceChild(span, node);
+            }
+        }
+
+        // Rola até o primeiro destaque encontrado
+        const highlighted = document.querySelector('.highlight');
+        if (highlighted) {
+            highlighted.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+
+        // Limpa o campo de pesquisa
+        searchInput.value = '';
+    }
+
+    function removeHighlights() {
+        // Remove o destaque ao substituir os elementos de volta ao texto normal
+        const highlights = document.querySelectorAll('.highlight');
+        highlights.forEach((el) => {
+            el.outerHTML = el.innerText; // Substitui o <span> pelo texto
+        });
+    }
+});
+

@@ -24,3 +24,8 @@ img {
     height: auto;
     display: block;
 }
+
+/* Bloqueia o scroll do body */
+.no-scroll {
+    overflow: hidden;
+}
