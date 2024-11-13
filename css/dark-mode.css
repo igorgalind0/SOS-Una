@@ -112,6 +112,10 @@ body.dark-mode .depoimentos h2 {
     color: var(--cor-2-b); /* Define a cor do texto em .doar-destino, .depoimentos li e h2 no modo escuro */
 }
 
+body.dark-mode .depoimentos li > span {
+    background: var(--cor-2-b); /*Quando tiver no modo dark, o span dentro da li fica com fundo azul*/
+}
+
 body.dark-mode .artigo-ods h2,
 body.dark-mode .artigo-ods h1,
 body.dark-mode .artigo-ods h3 {

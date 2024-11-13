@@ -35,11 +35,12 @@
     font-size: 1.5rem; /* Define o tamanho da fonte do parágrafo como 1.5rem */
     margin-top: 10px !important; /* Adiciona uma margem superior de 10px ao parágrafo, com !important */
     text-align: center; /* Alinha o texto ao centro */
+    font-weight: 500; /*Define peso da fonte como 500*/
 }
 
 .depoimentos h2 {
     font-size: 1.125rem; /* Define o tamanho da fonte do subtítulo como 1.125rem */
     text-align: center; /* Alinha o subtítulo ao centro */
-    font-weight: 400; /* Define o peso da fonte como normal (400) */
+    font-weight: 500; /* Define o peso da fonte como normal (500) */
     font-style: italic; /* Aplica itálico ao subtítulo */
 }
