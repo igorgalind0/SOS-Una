@@ -162,3 +162,7 @@
     outline: none; /* Remove o contorno padrão do campo de input. */
     font-size: 1.125rem; /* Define o tamanho da fonte do campo de input. */
 }
+
+.highlight {
+    background: yellow;
+}

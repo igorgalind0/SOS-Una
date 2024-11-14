@@ -189,72 +189,99 @@ document.addEventListener('DOMContentLoaded', () => {
 const pageUrl = encodeURIComponent(window.location.href); // URL da página atual
 const pageTitle = encodeURIComponent(document.title); // Título da página atual
 
+// Função para compartilhar a página no Facebook
 function shareOnFacebook() {
+    // Define a URL de compartilhamento do Facebook, incluindo o URL da página atual (pageUrl)
     const facebookUrl = `https://www.facebook.com/sharer/sharer.php?u=${pageUrl}`;
+    
+    // Abre uma nova janela para o compartilhamento no Facebook com largura e altura definidas
     window.open(facebookUrl, '_blank', 'width=1000,height=1000');
 }
 
+// Função para compartilhar a página no Twitter
 function shareOnTwitter() {
+    // Define a URL de compartilhamento do Twitter, incluindo o URL da página e o título (pageTitle)
     const twitterUrl = `https://twitter.com/intent/tweet?url=${pageUrl}&text=${pageTitle}`;
+    
+    // Abre uma nova janela para o compartilhamento no Twitter com largura e altura definidas
     window.open(twitterUrl, '_blank', 'width=1000,height=1000');
 }
 
+// Função para compartilhar a página no LinkedIn
 function shareOnLinkedIn() {
+    // Define a URL de compartilhamento do LinkedIn, incluindo o URL da página e o título (pageTitle)
     const linkedInUrl = `https://www.linkedin.com/shareArticle?mini=true&url=${pageUrl}&title=${pageTitle}`;
+    
+    // Abre uma nova janela para o compartilhamento no LinkedIn com largura e altura definidas
     window.open(linkedInUrl, '_blank', 'width=1000,height=1000');
 }
 
+// Função para compartilhar a página no WhatsApp
 function shareOnWhatsApp() {
+    // Define a URL de compartilhamento do WhatsApp, incluindo o título e o URL da página
     const whatsappUrl = `https://api.whatsapp.com/send?text=${pageTitle} - ${pageUrl}`;
+    
+    // Abre uma nova janela para o compartilhamento no WhatsApp (não define largura/altura, pois depende do dispositivo)
     window.open(whatsappUrl, '_blank');
 }
 
+
 // Função para destacar texto ao pressionar Enter na pesquisa
+// Executa o código quando todo o conteúdo da página foi carregado
 document.addEventListener('DOMContentLoaded', () => {
-    const searchInput = document.getElementById('pesquisaInput');
+    const searchInput = document.getElementById('pesquisaInput'); // Captura o elemento de entrada de pesquisa
 
+    // Adiciona um evento ao campo de entrada para capturar a tecla pressionada
     searchInput.addEventListener('keypress', (event) => {
+        // Verifica se a tecla pressionada é Enter
         if (event.key === 'Enter') {
-            const searchTerm = searchInput.value.trim();
+            const searchTerm = searchInput.value.trim(); // Obtém o termo de pesquisa e remove espaços extras
 
+            // Verifica se o termo de pesquisa não está vazio
             if (searchTerm) {
-                highlightTerm(searchTerm);
+                highlightTerm(searchTerm); // Chama a função para destacar o termo
             }
         }
     });
 
-    // Destaca o termo de pesquisa no texto da página
+    // Função para destacar todas as ocorrências do termo pesquisado no texto da página
     function highlightTerm(term) {
-        removeHighlights();
+        removeHighlights(); // Remove os destaques anteriores
 
+        // Cria um TreeWalker para percorrer todos os nós de texto na página
         const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null, false);
         let node;
 
-        while (node = walker.nextNode()) {
-            const regex = new RegExp(`(${term})`, 'gi');
-            const parent = node.parentNode;
+        // Percorre cada nó de texto
+        while ((node = walker.nextNode())) {
+            const regex = new RegExp(`(${term})`, 'gi'); // Expressão regular para encontrar o termo (case insensitive)
+            const parent = node.parentNode; // Obtém o elemento pai do nó de texto
 
+            // Verifica se o termo aparece no texto do nó
             if (regex.test(node.nodeValue)) {
+                // Substitui o termo encontrado por uma tag <span> com a classe "highlight" para destacar o texto
                 const newHTML = node.nodeValue.replace(regex, `<span class="highlight">$1</span>`);
-                const span = document.createElement('span');
-                span.innerHTML = newHTML;
-                parent.replaceChild(span, node);
+                const span = document.createElement('span'); // Cria um novo elemento <span>
+                span.innerHTML = newHTML; // Define o HTML do span com o texto destacado
+                parent.replaceChild(span, node); // Substitui o nó de texto original pelo novo span com destaque
             }
         }
 
+        // Obtém a primeira ocorrência destacada e faz rolagem suave até ela
         const highlighted = document.querySelector('.highlight');
         if (highlighted) {
-            highlighted.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            highlighted.scrollIntoView({ behavior: 'smooth', block: 'center' }); // Centraliza a primeira ocorrência na tela
         }
 
-        searchInput.value = '';
+        searchInput.value = ''; // Limpa o campo de entrada de pesquisa
     }
 
-    // Remove o destaque
+    // Função para remover todos os destaques atuais
     function removeHighlights() {
-        const highlights = document.querySelectorAll('.highlight');
+        const highlights = document.querySelectorAll('.highlight'); // Seleciona todos os elementos destacados
         highlights.forEach((el) => {
-            el.outerHTML = el.innerText;
+            el.outerHTML = el.innerText; // Substitui o <span> destacado pelo texto original
         });
     }
 });
+
